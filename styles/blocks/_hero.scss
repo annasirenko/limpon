@@ -1,0 +1,23 @@
+.hero__columns-title{
+    @include title($size:rem(80px), $weight:600);
+    line-height: 1.13;
+    letter-spacing: -2.4px;
+    text-align:left;
+        
+}
+.btn-sm-grey{
+    margin-left: rem(15px);
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    &__columns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: .8;
+        
+    }
+
+}

@@ -1,0 +1,32 @@
+.btn-md{
+    @include md;
+    &:hover{
+        border: 1px solid $blue;
+        color: $blue;
+        background: #fff;
+    }
+}
+.btn-sm{
+    @include sm;
+    &:hover{
+        border: 1px solid $blue;
+        color: $blue;
+        background: #fff;
+    }
+}
+
+.btn-sm-grey{
+    @include sm(#cbdbe8, #7e8bae);
+    &:hover{
+        border: 1px solid #cbdbe8;
+        background: #fff;
+    }
+}
+
+.btn-info{
+    @include md(transparent, #8085b1);
+    border: 1px solid #dce1e5;
+    &:hover{
+        @include md;        
+    }
+}

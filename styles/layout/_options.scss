@@ -1,0 +1,85 @@
+@each $social in (fb, tw, be, pin, f){
+    .footer__social-#{$social} {
+        background: url('../../img/#{$social}.png') center center no-repeat;
+    }
+}
+
+.footer__social-icon{
+    width: 20px;
+    height: 20px;
+    display: block;
+
+}
+
+@mixin md ($bg:$blue, $color:#fff){
+  background: $bg;
+  border: 1px solid $bg;
+  max-width: rem(230px);
+  font-size: rem(12px);
+  font-weight: bold;
+  text-align: center;
+  color: $color;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 20px 40px;
+  letter-spacing: 2.5px;
+  transition: .3s linear;
+}
+
+@mixin sm ($bg:$blue, $color:#fff){
+  background: $bg;
+  border: 1px solid $bg;
+  max-width: rem(183px);
+  font-size: rem(12px);
+  font-weight: bold;
+  text-align: center;
+  color: $color;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 20px 40px;
+  letter-spacing: 1.7px;
+  transition: .3s linear;
+}
+
+@mixin title($size: rem(50px), $weight:600, $color: $dark-title){
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin subtitle($color: $blue){
+  font-size: rem(18px);
+  font-weight: 800;
+  color: $color;
+  text-transform: uppercase;
+}
+
+
+// .team{
+//     background: url('../../img/bg-1.jpg') no-repeat center center;
+//     height: 100%;
+
+// }
+
+// colors
+$blue: #1085e4;
+$dark-title:#192b59;
+$lorem:#7581a1;
+
+
+
+@function rem($px){
+    @return $px / 16px + 0rem;
+  }
+  
+  @mixin tablets(){
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin phones(){
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  }

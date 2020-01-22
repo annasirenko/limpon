@@ -1,0 +1,45 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(48px);
+}
+.nav__list{
+    display: flex; 
+    margin-left: rem(157px);   
+}
+.nav__item{
+    font-size: rem(12px);
+    font-weight: bold;
+    color: #6e7ea9;
+    letter-spacing: 2.4px;
+    margin-right: rem(43px);
+    transition: .3s linear;
+    &:hover{
+    color: $blue;
+}
+    &:last-child{
+    margin-right: 0;
+}
+    & a{
+    display:block;
+    position: relative;    
+    
+    &:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: $blue;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    }
+    &:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+}
+}
