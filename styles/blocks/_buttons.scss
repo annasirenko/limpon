@@ -26,6 +26,7 @@
 .btn-info{
     @include md(transparent, #8085b1);
     border: 1px solid #dce1e5;
+    
     &:hover{
         @include md;        
     }

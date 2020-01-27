@@ -14,7 +14,7 @@
 @mixin md ($bg:$blue, $color:#fff){
   background: $bg;
   border: 1px solid $bg;
-  max-width: rem(230px);
+  min-width: rem(230px);
   font-size: rem(12px);
   font-weight: bold;
   text-align: center;
@@ -52,6 +52,7 @@
   font-weight: 800;
   color: $color;
   text-transform: uppercase;
+  
 }
 
 

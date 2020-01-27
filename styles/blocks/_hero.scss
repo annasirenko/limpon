@@ -1,8 +1,10 @@
 .hero__columns-title{
-    @include title($size:rem(80px), $weight:600);
+    @include title($size:rem(60px), $weight:600);
     line-height: 1.13;
     letter-spacing: -2.4px;
     text-align:left;
+    margin-bottom: rem(65px);
+    max-width: rem(600px);
         
 }
 .btn-sm-grey{

@@ -332,9 +332,6 @@ body {
   max-width: 70rem;
   width: 95%; }
 
-.section {
-  height: 100vh; }
-
 .maincontent {
   height: 100%; }
 
@@ -403,7 +400,7 @@ img {
 .btn-md {
   background: #1085e4;
   border: 1px solid #1085e4;
-  max-width: 14.375rem;
+  min-width: 14.375rem;
   font-size: 0.75rem;
   font-weight: bold;
   text-align: center;
@@ -462,7 +459,7 @@ img {
 .btn-info {
   background: transparent;
   border: 1px solid transparent;
-  max-width: 14.375rem;
+  min-width: 14.375rem;
   font-size: 0.75rem;
   font-weight: bold;
   text-align: center;
@@ -478,7 +475,7 @@ img {
   .btn-info:hover {
     background: #1085e4;
     border: 1px solid #1085e4;
-    max-width: 14.375rem;
+    min-width: 14.375rem;
     font-size: 0.75rem;
     font-weight: bold;
     text-align: center;
@@ -543,12 +540,14 @@ header {
       left: 0; }
 
 .hero__columns-title {
-  font-size: 5rem;
+  font-size: 3.75rem;
   font-weight: 600;
   color: #192b59;
   line-height: 1.13;
   letter-spacing: -2.4px;
-  text-align: left; }
+  text-align: left;
+  margin-bottom: 4.0625rem;
+  max-width: 37.5rem; }
 
 .btn-sm-grey {
   margin-left: 0.9375rem; }
@@ -574,3 +573,130 @@ header {
     -webkit-box-flex: .8;
     -ms-flex: .8;
     flex: .8; }
+
+.fun-facts {
+  background-color: #edf6ff;
+  padding: 7.25rem 0 6.875rem 0; }
+  .fun-facts__title {
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    text-align: center;
+    max-width: 31.25rem;
+    margin: 0 auto; }
+  .fun-facts__subtitle {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 0.875rem; }
+  .fun-facts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 3.125rem; }
+  .fun-facts__item {
+    text-align: center; }
+  .fun-facts__number {
+    text-align: center;
+    font-size: 3.75rem;
+    letter-spacing: -1.8px;
+    color: #bacbdc;
+    font-weight: 600;
+    letter-spacing: 0;
+    display: block; }
+  .fun-facts__property {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    line-height: -1.8px;
+    letter-spacing: 2.7px; }
+
+.screen-preview {
+  background-color: #edf6ff;
+  padding: 7.25rem 0 0 0; }
+  .screen-preview__subtitle {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    display: block;
+    margin-bottom: 1rem; }
+  .screen-preview__title {
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    text-align: center;
+    font-size: 2.5rem; }
+  .screen-preview__pic {
+    margin-top: 4.9375rem; }
+
+.pricing-plans__subtitle {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #1085e4;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  display: block;
+  margin-bottom: 1rem; }
+
+.pricing-plans__title {
+  font-size: 3.125rem;
+  font-weight: 600;
+  color: #192b59;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  text-align: center;
+  font-size: 2.5rem; }
+
+.pricing-plans__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.pricing-plans__item {
+  background-color: #f5faff;
+  text-align: center;
+  color: #8085b1;
+  padding: 4.8125rem 4.375rem;
+  margin-top: 5.0625rem;
+  margin-right: 1.875rem;
+  max-height: 38.9375rem;
+  max-width: 21.875rem; }
+  .pricing-plans__item-list {
+    margin-bottom: 3.125rem; }
+  .pricing-plans__item-properties {
+    line-height: 2.86;
+    font-size: 0.875rem; }
+  .pricing-plans__item.active {
+    background-color: #192b59;
+    color: #fff; }
+  .pricing-plans__item-title {
+    font-size: 4.375rem;
+    letter-spacing: -2.1px;
+    color: #000958;
+    font-weight: 800; }
+  .pricing-plans__item-subtitle {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 2.8px; }
+    .pricing-plans__item-subtitle.active {
+      color: #fff; }

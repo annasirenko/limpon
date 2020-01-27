@@ -1,0 +1,21 @@
+.screen-preview{
+    background-color: #edf6ff;
+    padding: rem(116px) 0 0 0;
+    &__subtitle{
+        @include subtitle;
+        letter-spacing: 3.6px;
+        display: block;
+        margin-bottom: rem(16px);
+    }
+    &__title{
+        @include title;
+        line-height: 1.2;
+        letter-spacing: -1.5px;
+        text-align: center;
+        font-size: rem(40px);
+        
+    }
+    &__pic{
+        margin-top: rem(79px);
+    }
+}
