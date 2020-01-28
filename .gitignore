@@ -34,7 +34,7 @@ Thumbs.db
 .svn
 bower_components
 build
-/img/
+
 # Node.JS
 node_modules
 npm-debug.log
