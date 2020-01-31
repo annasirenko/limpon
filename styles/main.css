@@ -591,7 +591,7 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: url("../../img/bg-1.jpg") no-repeat center center;
+  background: url("../img/bg-1.jpg") no-repeat center center;
   background-size: cover;
   padding: 3rem 0 20.625rem 0;
   position: relative; }
@@ -622,7 +622,7 @@ header {
 
 .partners {
   background-color: #1085e4;
-  background: url("../../img/pattern.png") center center no-repeat;
+  background: url("../img/pattern.png") center center no-repeat;
   min-height: 17.125rem; }
   .partners__list {
     display: -webkit-box;
