@@ -1,0 +1,13 @@
+.partners{
+    background-color: $blue;
+    background: url('../../img/pattern.png') center center no-repeat;
+    min-height: rem(274px);
+    
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: rem(116px);
+    }
+    
+}

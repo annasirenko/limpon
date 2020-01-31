@@ -11,7 +11,7 @@
     &:hover{
         border: 1px solid $blue;
         color: $blue;
-        background: #fff;
+        background: transparent;
     }
 }
 
@@ -29,5 +29,12 @@
     
     &:hover{
         @include md;        
+    }
+    &.active{
+        @include md; 
+        &:hover{
+            @include md(transparent, #8085b1);
+            border: 1px solid #dce1e5;
+        }
     }
 }

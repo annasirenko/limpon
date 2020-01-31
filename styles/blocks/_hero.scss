@@ -1,9 +1,9 @@
 .hero__columns-title{
-    @include title($size:rem(60px), $weight:600);
+    @include title($size:rem(80px), $weight:600);
     line-height: 1.13;
     letter-spacing: -2.4px;
     text-align:left;
-    margin-bottom: rem(65px);
+    margin-bottom: rem(42px);
     max-width: rem(600px);
         
 }
@@ -14,12 +14,28 @@
 .hero{
     display: flex;
     flex-direction: column;
+    background: url('../../img/bg-1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: rem(48px) 0 rem(330px) 0;
+    position: relative;
     &__columns{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: .8;
+        &-desc{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex: .8;
+        }
+        &-screenshot{
+            background: url('../../img/image.png') no-repeat;
+            width: 800px;
+            height: 600px;
+            position: absolute;
+            right: rem(-138px);
+            top: rem(189px);
+        }
         
     }
-
+   
+    
 }
