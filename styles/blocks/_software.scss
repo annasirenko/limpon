@@ -1,0 +1,64 @@
+.software{
+    position: relative;
+    background: url('../img/bg-section-featured.jpg') no-repeat;
+    background-position: 52% 0;
+    padding: rem(109px) 0 rem(156px) 0;
+    &__columns{
+        display: flex;
+        justify-content: flex-end;
+        
+        &>div{
+            flex-basis: 55%;
+        }
+    }
+    // &__screenshot{
+    //     background: url('../img/Слой1.png') no-repeat;
+    //     width: 900px;
+    //     height: 760px;
+    //     position: absolute;
+    //     left: 0;
+    //     top: 40px;
+    // }
+    &__title{
+        @include title;
+        margin-top: rem(12px);
+        margin-bottom: rem(30px);
+        line-height: 1.2;
+    }
+
+    &__list{
+        margin-top: rem(30px);
+        height: rem(340px);
+        overflow: hidden;
+        overflow-y: scroll;
+        ::-webkit-scrollbar { width: 4px; height: 2px;}
+        ::-webkit-scrollbar-button {  background-color: $blue; }
+        ::-webkit-scrollbar-track {  background-color: #f3f6ff;}
+        ::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
+        ::-webkit-scrollbar-thumb { height: 50px; background-color: #f3f6ff; border-radius: 3px;}
+        ::-webkit-scrollbar-corner { background-color: #f3f6ff;}
+        ::-webkit-resizer { background-color: #f3f6ff;}
+        &-term{
+            font-weight: bold;                
+            color: #5a6789;  
+            margin-bottom: rem(10px);            
+        }
+        &-definition{
+            width: 93%;
+            margin-left: 0;
+            margin-bottom: rem(50px);
+            border-bottom: 1px solid #f2f2f2;
+            padding-bottom: rem(23px);
+        }
+    }
+    &__text{
+        width: 89%;
+    }
+}
+
+.gear__icon{
+    background: url('../img/icon-gear.png') no-repeat;
+    background-position: -13px 0;
+    width: 117px;
+    height: 98px;
+}
