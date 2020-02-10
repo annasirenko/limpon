@@ -21,7 +21,7 @@
   color: $color;
   text-transform: uppercase;
   border-radius: 30px;
-  padding: 20px 40px;
+  padding: rem(20px) rem(40px);
   letter-spacing: 2.5px;
   transition: .3s linear;
 }
@@ -36,8 +36,8 @@
   color: $color;
   text-transform: uppercase;
   border-radius: 30px;
-  padding: 20px 40px;
-  letter-spacing: 1.7px;
+  padding: rem(20px) rem(40px);
+  letter-spacing: 2.4px;
   transition: .3s linear;
 }
 
