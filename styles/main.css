@@ -5494,6 +5494,57 @@ header {
         border-color: #1085e4;
         color: #fff; }
 
+.advantages {
+  background: url("../img/bg-8.jpg") no-repeat;
+  background-size: cover;
+  padding: 7.4375rem 0 7.5625rem 0;
+  background-position: 47%; }
+  .advantages__title {
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    margin-bottom: 1.875rem; }
+  .advantages__columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .advantages__desc {
+    width: 50%; }
+  .advantages__text {
+    width: 97%;
+    margin-bottom: 2.375rem; }
+
+.properties {
+  background: url("../img/bg-9.jpg") no-repeat;
+  background-size: cover;
+  padding: 7.4375rem 0 7.5625rem 0;
+  background-position: 47%; }
+  .properties__columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .properties__title {
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    margin-bottom: 1.875rem; }
+  .properties__desc {
+    width: 59%; }
+  .properties__text {
+    width: 93%;
+    margin-bottom: 2.375rem; }
+
 .screen-preview {
   background-color: #edf6ff;
   padding: 7.25rem 0 0 0; }

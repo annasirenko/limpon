@@ -1,0 +1,26 @@
+.advantages {
+  background: url("../img/bg-8.jpg") no-repeat;
+  background-size: cover;
+  padding: rem(119px) 0 rem(121px) 0;
+  background-position: 47%;
+  &__title {
+    @include title;
+    line-height: 1.2;
+    margin-bottom: rem(30px);
+  }
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  //   &__screenshot {
+  //     flex-basis: 100%;
+  //   }
+  &__desc {
+    width: 50%;
+  }
+  &__text {
+    width: 97%;
+    margin-bottom: rem(38px);
+  }
+}

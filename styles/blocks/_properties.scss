@@ -1,0 +1,22 @@
+.properties {
+  background: url("../img/bg-9.jpg") no-repeat;
+  background-size: cover;
+  padding: rem(119px) 0 rem(121px) 0;
+  background-position: 47%;
+  &__columns {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    @include title;
+    line-height: 1.2;
+    margin-bottom: rem(30px);
+  }
+  &__desc {
+    width: 59%;
+  }
+  &__text {
+    width: 93%;
+    margin-bottom: rem(38px);
+  }
+}
