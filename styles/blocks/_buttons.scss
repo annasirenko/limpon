@@ -1,40 +1,75 @@
-.btn-md{
+.btn-md {
+  @include md;
+  &:hover {
+    border: 1px solid $blue;
+    color: $blue;
+    background: #fff;
+  }
+}
+.btn-sm {
+  @include sm;
+  &:hover {
+    border: 1px solid $blue;
+    color: $blue;
+    background: transparent;
+  }
+}
+
+.btn-sm-grey {
+  @include sm(#cbdbe8, #7e8bae);
+  &:hover {
+    border: 1px solid #cbdbe8;
+    background: #fff;
+  }
+}
+
+.btn-info {
+  @include md(transparent, #8085b1);
+  border: 1px solid #dce1e5;
+
+  &:hover {
     @include md;
-    &:hover{
-        border: 1px solid $blue;
-        color: $blue;
-        background: #fff;
+  }
+  &.active {
+    @include md;
+    &:hover {
+      @include md(transparent, #8085b1);
+      border: 1px solid $blue;
     }
-}
-.btn-sm{
-    @include sm;
-    &:hover{
-        border: 1px solid $blue;
-        color: $blue;
-        background: transparent;
-    }
+  }
 }
 
-.btn-sm-grey{
-    @include sm(#cbdbe8, #7e8bae);
-    &:hover{
-        border: 1px solid #cbdbe8;
-        background: #fff;
-    }
-}
+// .video-button {
+//   height: 100px;
+//   width: 100px;
+//   background-color: #fff;
+//   border-radius: 100px;
+//   border: 10px solid #e2f0fe;
+//   display: block;
+//   position: absolute;
+//   top: 47%;
+//   left: 0;
+//   right: 10%;
+//   margin: auto;
+//   transform: translate(0, -50%);
+//   transition: all 300ms linear 0ms;
 
-.btn-info{
-    @include md(transparent, #8085b1);
-    border: 1px solid #dce1e5;
-    
-    &:hover{
-        @include md;        
-    }
-    &.active{
-        @include md; 
-        &:hover{
-            @include md(transparent, #8085b1);
-            border: 1px solid #dce1e5;
-        }
-    }
+//   &:hover {
+//     background-color: #1085e4;
+//     border-color: #1085e4;
+//     color: #fff;
+//   }
+// }
+
+.fas {
+  display: inline-block;
+  line-height: 1;
+  font-family: FontAwesome;
+  position: absolute;
+  color: $blue;
+  top: 42%;
+  left: 45%;
+  &:hover {
+    color: #fff;
+  }
 }

@@ -1,100 +1,96 @@
-.pricing-plans{
-    &__subtitle{
-        @include subtitle;
-        letter-spacing: 3.6px;
-        display: block;
-        margin-bottom: rem(16px);
+.pricing-plans {
+  &__subtitle {
+    @include subtitle;
+    letter-spacing: 3.6px;
+    display: block;
+    margin-bottom: rem(16px);
+  }
+  &__title {
+    @include title;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    text-align: center;
+    font-size: rem(40px);
+    margin-bottom: rem(81px);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    background-color: #f5faff;
+    text-align: center;
+    color: #8085b1;
+    flex-basis: 32%;
+    padding: rem(90px) 0 rem(96px) 0;
+    // margin-top: rem(81px);
+    // max-height: rem(623px);
+    // max-width: rem(350px);
+    position: relative;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 60px solid #fff;
+      border-left: 100px solid transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
-    &__title{
-        @include title;
-        line-height: 1.2;
-        letter-spacing: -1.5px;
-        text-align: center;
-        font-size: rem(40px);
-        margin-bottom: rem(81px);
 
+    & h3 span:first-child {
+      font-size: rem(14px);
+      letter-spacing: 0.1px;
     }
-    &__list{
-        display: flex;
-        justify-content: space-between;
+    & h3 span:last-child {
+      color: #7b8ab2;
+      font-size: rem(14px);
+      letter-spacing: 0.1px;
     }
-    &__item{
-        background-color: #f5faff;
-        text-align: center;        
-        color: #8085b1;
-        flex-basis: 32%;
-        padding: rem(90px) 0 rem(96px) 0;
-        // margin-top: rem(81px);
-        // max-height: rem(623px);
-        // max-width: rem(350px);
-        position: relative;
-        &::after{
-            content: "";
-            width: 0;
-            height: 0;
-            border-top: 60px solid #fff;
-            border-left: 100px solid transparent ;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-       
-        & h3 span:first-child{
-            font-size: rem(14px);
-            letter-spacing: 0.1px;
-        }
-        & h3 span:last-child{
-            color: #7b8ab2;
-            font-size: rem(14px);
-            letter-spacing: 0.1px;
-        }
-        
-        &:last-child{
-            margin-right: 0;
-        }
-        &-list{
-            margin-bottom: rem(50px);
-            margin-top: rem(50px);
-        }
-        
-        &-properties{
-            line-height: 2.86;
-            font-size: rem(14px);
-            // padding-bottom: rem(10px);
-        }
-        
-        &.active{
-            background-color: #192b59;
-            color: #fff;
-            & h3{
-                color:#fff;
-            }
-            & h3 span:first-child{
-                color: #fff;
-                font-size: rem(14px);
-                letter-spacing: 0.1px;
-            }
-            
-        }
 
-        &-title{     
-            font-size: rem(70px);
-            letter-spacing: -2.1px;
-            color: #000958;
-            font-weight: bold;
-                                  
-        }
-        &-subtitle{
-            @include subtitle;
-            font-size: rem(14px);
-            letter-spacing: 2.8px;
-            font-weight: bold;
-            &.active{
-                color: #fff;
-            }
-        }
-        
+    &:last-child {
+      margin-right: 0;
     }
+    &-list {
+      margin-bottom: rem(50px);
+      margin-top: rem(50px);
+    }
+
+    &-properties {
+      line-height: 2.86;
+      font-size: rem(14px);
+      // padding-bottom: rem(10px);
+    }
+
+    &.active {
+      background-color: #192b59;
+      color: #fff;
+      & h3 {
+        color: #fff;
+      }
+      & h3 span:first-child {
+        color: #fff;
+        font-size: rem(14px);
+        letter-spacing: 0.1px;
+      }
+    }
+
+    &-title {
+      font-size: rem(70px);
+      letter-spacing: -2.1px;
+      color: #000958;
+      font-weight: bold;
+    }
+    &-subtitle {
+      @include subtitle;
+      font-size: rem(14px);
+      letter-spacing: 2.8px;
+      font-weight: bold;
+      &.active {
+        color: #fff;
+      }
+    }
+  }
 }
 
 // .pricing-plans__item-list{
