@@ -3,6 +3,7 @@
   background-size: cover;
   padding: rem(119px) 0 rem(121px) 0;
   background-position: 47%;
+  position: relative;
   &__columns {
     display: flex;
     align-items: center;
@@ -19,4 +20,13 @@
     width: 93%;
     margin-bottom: rem(38px);
   }
+  // &__screenshot {
+  //   background: url("./img/Слой3.png") no-repeat;
+  //   position: absolute;
+  //   display: block;
+  //   height: 415px;
+  //   width: 410px;
+  //   top: 0;
+  //   right: 0;
+  // }
 }

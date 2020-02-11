@@ -5438,18 +5438,10 @@ header {
     color: #192b59;
     line-height: 1.2;
     margin-bottom: 2.5rem; }
-  .presentation__columns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+  .presentation__desc {
+    width: 80%; }
   .presentation__text {
-    width: 82%;
+    width: 69%;
     margin-bottom: 2.3125rem; }
   .presentation__available {
     text-transform: uppercase;
@@ -5468,9 +5460,9 @@ header {
     .presentation__item:first-child {
       margin-left: 0; }
   .presentation__video {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    position: relative; }
+    position: absolute;
+    top: 3.437rem;
+    right: 0; }
     .presentation__video .video-button {
       height: 100px;
       width: 100px;
@@ -5525,7 +5517,8 @@ header {
   background: url("../img/bg-9.jpg") no-repeat;
   background-size: cover;
   padding: 7.4375rem 0 7.5625rem 0;
-  background-position: 47%; }
+  background-position: 47%;
+  position: relative; }
   .properties__columns {
     display: -webkit-box;
     display: -ms-flexbox;
