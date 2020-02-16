@@ -1,103 +1,100 @@
-.features{
-    padding-top: rem(86px);
-    padding-bottom: rem(120px);
-    &__block{
-        display: grid;
-        grid-template-areas: "a b c" 
-                            "d b c" 
-                            "d f g" 
-                            "e f g" 
-                            "e h h";
-        grid-gap: rem(35px);
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: rem(1100px);
-        margin: 0 auto;
+.features {
+  padding-top: rem(86px);
+  padding-bottom: 8.5rem;
 
+  &__block {
+    display: grid;
+    grid-template-areas:
+      "a b c"
+      "d b c"
+      "d f g"
+      "e f g"
+      "e h h";
+    grid-gap: rem(35px);
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: rem(1100px);
+    margin: 0 auto;
+  }
+  &__title {
+    @include title($size: rem(40px));
+    line-height: 1.25;
+    font-weight: bold;
+    grid-area: a;
+    & span {
+      @include subtitle;
+      display: block;
+      font-size: rem(14px);
+      letter-spacing: 2.8px;
+      margin-bottom: rem(27px);
     }
-    &__title{
-        @include title ($size: rem(40px));
-        line-height: 1.25;
+  }
+  &__item {
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(180, 181, 181, 0.2);
+    padding: rem(50px) rem(30px) 2.0625rem;
+    transition: all 300ms linear 0ms;
+    &:hover {
+      transform: translateY(-9px);
+    }
+  }
+  &__card {
+    &-icon {
+      margin: 0 auto 1.25rem;
+    }
+    &-title {
+      margin-bottom: rem(18px);
+      font-size: rem(20px);
+      color: $dark-title;
+      font-weight: 600;
+      line-height: 2.5;
+      letter-spacing: -0.6px;
+    }
+    &-specification {
+      margin-bottom: 0.685rem;
+    }
+    &-link {
+      color: $blue;
+      font-weight: 600;
+    }
+  }
+  &__review {
+    margin-left: rem(30px);
+    &-desc {
+      margin-bottom: rem(20px);
+    }
+    &-author {
+      color: $blue;
+      & span {
+        font-size: rem(16px);
         font-weight: bold;
-        grid-area: a;
-        & span{
-            @include subtitle;
-            display: block;
-            font-size: rem(14px);
-            letter-spacing: 2.8px;
-            margin-bottom: rem(27px);
-        }
+        color: $dark-title;
+      }
     }
-    &__item{
-        text-align: center;
-        box-shadow: 0 8px 18px rgba(180, 181, 181, 0.20);
-        padding: rem(50px) rem(30px) rem(65px);
-        transition: all 300ms linear 0ms;
-        &:hover{
-            transform: translateY(-9px);
-        }
-        
-    }
-    &__card{
-        &-icon{
-            margin:  0 auto rem(36px);
-        }
-        &-title{
-            margin-bottom: rem(18px);
-            font-size: rem(20px);
-            color: $dark-title;
-            font-weight: 600;
-            line-height: 2.5;
-            letter-spacing: -0.6px;
-            
-        }
-        &-specification{
-            margin-bottom: rem(27px);
-        }
-        &-link{
-            color: $blue;
-            font-weight: 600;
-        }
-
-    }
-    &__review{
-        margin-left: rem(30px);
-        &-desc{
-            margin-bottom: rem(20px);
-            
-            
-        }
-        &-author{
-            color: $blue;
-            & span{
-                font-size: rem(16px);
-                font-weight: bold;
-                color: $dark-title;
-            }
-        }
-    }
-    
+  }
 }
 
-.grid{
-    &__item-1{
-        grid-area: b;
-    }
-    &__item-2{
-        grid-area: c;
-    }
-    &__item-3{
-        grid-area: d;
-    }
-    &__item-4{
-        grid-area: e;
-    }
-    &__item-5{
-        grid-area: f;
-    }
-    &__item-6{
-        grid-area: g;
-    }
-    &-text{
-        grid-area: h;
-    }
+.grid {
+  &__item-1 {
+    grid-area: b;
+  }
+  &__item-2 {
+    grid-area: c;
+  }
+  &__item-3 {
+    grid-area: d;
+  }
+  &__item-4 {
+    grid-area: e;
+    // margin-bottom: rem(39px);
+  }
+  &__item-5 {
+    grid-area: f;
+  }
+  &__item-6 {
+    grid-area: g;
+  }
+  &-text {
+    grid-area: h;
+    // margin-bottom: rem(39px);
+  }
 }

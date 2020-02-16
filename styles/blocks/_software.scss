@@ -1,16 +1,17 @@
 .software {
   position: relative;
   background: url("../img/bg-section-featured.jpg") no-repeat;
-  background-position: 52%;
+  background-position: center;
+  background-size: cover;
   bottom: rem(-38px);
-  padding: rem(109px) 0 rem(156px) 0;
+  padding: 4.8125rem 0 6.75rem 0;
   overflow: hidden;
   &__columns {
     display: flex;
     justify-content: flex-end;
 
     & > div {
-      flex-basis: 55%;
+      flex-basis: 52%;
     }
   }
   // &__screenshot{

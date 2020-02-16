@@ -2,7 +2,7 @@
   background: url("../img/presentation.jpg") no-repeat;
   background-size: cover;
   background-position: 47%;
-  padding: rem(120px) 0 rem(120px) 0;
+  padding: 5.5rem 0 rem(120px) 0;
   position: relative;
   &__title {
     @include title;

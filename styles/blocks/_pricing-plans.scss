@@ -22,21 +22,21 @@
     text-align: center;
     color: #8085b1;
     flex-basis: 32%;
-    padding: rem(90px) 0 rem(96px) 0;
+    padding: 2.625rem 0 5rem 0;
     // margin-top: rem(81px);
     // max-height: rem(623px);
     // max-width: rem(350px);
     position: relative;
-    &::after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-top: 60px solid #fff;
-      border-left: 100px solid transparent;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+    // &::after {
+    //   content: "";
+    //   width: 0;
+    //   height: 0;
+    //   border-top: 60px solid #fff;
+    //   border-left: 100px solid transparent;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    // }
 
     & h3 span:first-child {
       font-size: rem(14px);
@@ -93,6 +93,15 @@
   }
 }
 
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  transform: scaleY(-1);
+  fill: #edf4fb;
+}
 // .pricing-plans__item-list{
 //     margin-bottom: 50px;
 // }
