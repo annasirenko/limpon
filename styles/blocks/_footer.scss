@@ -1,0 +1,25 @@
+.footer {
+  height: 70px;
+  background-color: #192b59;
+  display: flex;
+  align-items: center;
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left > a {
+    font-size: rem(16px);
+    text-transform: uppercase;
+    color: $blue;
+  }
+  &__socials {
+    display: flex;
+    &-item {
+      margin-left: rem(20px);
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

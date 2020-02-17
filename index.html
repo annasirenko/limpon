@@ -326,7 +326,7 @@
         </div>
         <div class="presentation__video">
           <img src="./img/video.png" alt="" class="presentation__video-play">
-          <a class="video-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <a class="video-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
             <i class="fas fa-1.5x fa-play"></i></a>
 
         </div>
@@ -556,9 +556,9 @@
                     Ricardo T. Obrien
                   </div>
                 </div>
-                <div class="team__user-plus">
-                  <img src="./img/plus.png" alt="" class="plus-icon">
-                </div>
+                <button class="team__user-button">
+                  +
+                </button>
               </li>
               <li class="team__item">
                 <div class="team__user-pic">
@@ -572,9 +572,9 @@
                     Alberto Del Rio
                   </div>
                 </div>
-                <div class="team__user-plus">
-                  <img src="./img/plus.png" alt="" class="plus-icon">
-                </div>
+                <button class="team__user-button">
+                  +
+                </button>
               </li>
               <li class="team__item">
                 <div class="team__user-pic">
@@ -588,9 +588,9 @@
                     Thomas Alva Adison
                   </div>
                 </div>
-                <div class="team__user-plus">
-                  <img src="./img/plus.png" alt="" class="plus-icon">
-                </div>
+                <button class="team__user-button">
+                  +
+                </button>
 
               </li>
             </ul>
@@ -598,30 +598,32 @@
         </div>
       </section>
       <section class="trial">
-        <div class="trial__columns">
-          <div class="trial__left">
-            <img src="./img/Слой 8.png" alt="" class="trial-pic">
-          </div>
-          <div class="trial__right">
-            <h2 class="trial__title">Start Your Free Trial
-              No Need Credit Card.</h2>
-            <form action="" class="form">
-              <div class="form__row">
-                <input type="text" id="name">
-                <label for="name">Enter your name here</label>
-              </div>
-              <div class="form__row">
-                <input type="email" id="email">
-                <label for="email">Enter your email here</label>
-              </div>
-              <div class="form__row">
-                <textarea id="textarea"></textarea>
-                <label for="textarea">Enter your message here</label>
-              </div>
-              <button type="submit"><span></span>submit now</button>
+        <div class="container">
+          <div class="trial__columns">
+            <div class="trial__left">
+              <img src="./img/Слой8.png" alt="" class="trial-pic">
+            </div>
+            <div class="trial__right">
+              <h2 class="trial__title">Start Your Free Trial <br>
+                No Need Credit Card.</h2>
+              <form action="" class="form">
+                <div class="form__row">
+                  <input type="text" id="name" placeholder="Enter your name here">
+                  <!-- <label for="name">Enter your name here</label> -->
+                </div>
+                <div class="form__row">
+                  <input type="email" id="email" placeholder="Enter your email here">
+                  <!-- <label for="email">Enter your email here</label> -->
+                </div>
+                <div class="form__row">
+                  <textarea id="textarea" placeholder="Enter your message here"></textarea>
+                  <!-- <label for="textarea">Enter your message here</label> -->
+                </div>
+                <button type="submit" class="btn-md"><span></span>submit now</button>
 
-            </form>
+              </form>
 
+            </div>
           </div>
         </div>
       </section>
@@ -630,33 +632,36 @@
     <footer class="footer">
 
       <div class="container">
-        <div class="footer__left">
-          Made With Love & Copyright By - <a href="#">limpon</a>
-        </div>
-        <div class="footer__right">
-          <ul class="footer__socials">
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-icon footer__social-fb"></a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-icon footer__social-tw"></a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-icon footer__social-be"></a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-icon footer__social-pin"></a>
-            </li>
-            <li class="footer__social-item">
-              <a href="#" class="footer__social-icon footer__social-f"></a>
-            </li>
-          </ul>
+        <div class="footer__block">
+          <div class="footer__left">
+            Made With Love & Copyright By - <a href="#">limpon</a>
+          </div>
+          <div class="footer__right">
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-icon footer__social-fb"></a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-icon footer__social-tw"></a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-icon footer__social-be"></a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-icon footer__social-pin"></a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__social-icon footer__social-f"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
   </div>
 
-  <!-- <script src="https://use.fontawesome.com/2eac8f5338.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
 
 </html>

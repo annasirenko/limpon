@@ -1,4 +1,5 @@
 .pricing-plans {
+  padding-bottom: rem(140px);
   &__subtitle {
     @include subtitle;
     letter-spacing: 3.6px;
