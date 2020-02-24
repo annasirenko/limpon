@@ -1,9 +1,10 @@
 .fun-facts {
-  // background-color: #edf6ff;
-  background: url("../img/fun-facts.jpg") no-repeat;
-  background-size: cover;
-  background-position: 48%;
+  background-color: #edf6ff;
+  // background: url("../img/fun-facts.jpg") no-repeat;
+  // background-size: cover;
+  // background-position: 48%;
   padding: 9.25rem 0 rem(110px) 0;
+  position: relative;
   &__title {
     @include title;
     line-height: 1.2;
@@ -43,3 +44,14 @@
     letter-spacing: 2.7px;
   }
 }
+
+// .circle {
+//   display: block;
+//   background: url("../img/circle.svg") no-repeat;
+//   background-size: contain;
+//   position: absolute;
+//   left: 0;
+//   bottom: rem(-363px);
+//   width: 413px;
+//   height: 758px;
+// }

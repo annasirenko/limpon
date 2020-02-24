@@ -1,10 +1,24 @@
-@each $social in (fb, tw, be, pin, f) {
+@each $social in (fb, tw, be, inst) {
   .footer__social-#{$social} {
-    background: url("../../img/#{$social}.png") center center no-repeat;
+    background: url("../img/#{$social}-hover.png") center center no-repeat;
+  }
+}
+
+@each $social in (fb, tw, be, inst) {
+  .team__socials-#{$social} {
+    background: url("../img/#{$social}.png") center center no-repeat;
+    &:hover {
+      background: url("../img/#{$social}-hover.png") center center no-repeat;
+    }
   }
 }
 
 .footer__social-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.team__socials-icon {
   width: 20px;
   height: 20px;
   display: block;

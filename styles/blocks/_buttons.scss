@@ -73,3 +73,22 @@
     color: #fff;
   }
 }
+.fab {
+  display: inline-block;
+  line-height: 1;
+  // font: normal normal normal FontAwesome;
+  font-size: rem(18px);
+
+  font-family: FontAwesome;
+  font-weight: normal;
+  // position: absolute;
+  color: #a1aecf;
+  text-align: center;
+
+  // top: 82%;
+  // left: 39%;
+
+  &:hover {
+    color: #fff;
+  }
+}
