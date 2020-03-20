@@ -2,82 +2,137 @@
   background: url("../img/bg-12.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 240px 0 240px 0;
+  padding: 120px 0 120px 0;
   &__columns {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__title {
     @include title;
     line-height: 1.2;
     letter-spacing: -1.5px;
+    margin-bottom: rem(50px);
   }
 }
-.form__row {
-  margin-bottom: 20px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-  input::-webkit-input-placeholder {
-    color: #8995b3;
-  }
-  input::-moz-placeholder {
-    color: #8995b3;
-  }
-  input:-moz-placeholder {
-    color: #8995b3;
-  }
-  input:-ms-input-placeholder {
-    color: #8995b3;
-  }
-
-  textarea::-webkit-input-placeholder {
-    color: #8995b3;
-  }
-  textarea::-moz-placeholder {
-    color: #8995b3;
-  }
-  textarea:-moz-placeholder {
-    color: #8995b3;
-  }
-  textarea:-ms-input-placeholder {
-    color: #8995b3;
-  }
-
-  & > input {
-    // width: 100%;
-    min-width: 514px;
+.form {
+  &__row {
     position: relative;
-    border: 2px solid #dce4ec;
-    color: #8995b3;
-    border-radius: 35px;
-    font-size: rem(14px);
-    outline: none;
-    display: block;
-    width: 100%;
-    background-color: transparent;
-    padding: rem(25px) rem(230px) rem(25px) rem(37px);
-    transition: all 300ms linear 0ms;
-    &:focus {
-      border-color: $blue;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:nth-child(1):after {
+      content: "";
+      background: url("../img/user.png") no-repeat;
+      display: block;
+      height: rem(13px);
+      width: rem(15px);
+      position: absolute;
+      right: rem(40px);
+      top: rem(27px);
+    }
+    &:nth-child(2):after {
+      content: "";
+      background: url("../img/envelope.png") no-repeat;
+      display: block;
+      height: rem(11px);
+      width: rem(14px);
+      position: absolute;
+      right: rem(40px);
+      top: rem(27px);
+    }
+    &:nth-child(3):after {
+      content: "";
+      background: url("../img/pen.png") no-repeat;
+      display: block;
+      height: rem(15px);
+      width: rem(14px);
+      position: absolute;
+      right: rem(40px);
+      top: rem(27px);
+    }
+    input::-webkit-input-placeholder {
+      color: #8995b3;
+    }
+    input::-moz-placeholder {
+      color: #8995b3;
+    }
+    input:-moz-placeholder {
+      color: #8995b3;
+    }
+    input:-ms-input-placeholder {
+      color: #8995b3;
+    }
+
+    textarea::-webkit-input-placeholder {
+      color: #8995b3;
+    }
+    textarea::-moz-placeholder {
+      color: #8995b3;
+    }
+    textarea:-moz-placeholder {
+      color: #8995b3;
+    }
+    textarea:-ms-input-placeholder {
+      color: #8995b3;
+    }
+
+    & > input {
+      min-width: 514px;
+      position: relative;
+      border: 2px solid #dce4ec;
+      color: #8995b3;
+      border-radius: 35px;
+      font-size: rem(14px);
+      outline: none;
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      padding: rem(25px) rem(230px) rem(25px) rem(37px);
+      transition: all 300ms linear 0ms;
+      &:focus {
+        border-color: $blue;
+      }
+      &__name {
+        display: block;
+        height: rem(13px);
+        width: rem(15px);
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+    & > textarea {
+      width: 100%;
+      position: relative;
+      resize: none;
+      border: 2px solid #dce4ec;
+      color: #8995b3;
+      border-radius: 35px;
+      font-size: rem(14px);
+      outline: none;
+      display: block;
+      background-color: transparent;
+      padding: rem(25px) rem(230px) rem(92px) rem(37px);
+      transition: all 300ms linear 0ms;
+      &:focus {
+        border-color: $blue;
+      }
     }
   }
-  & > textarea {
-    width: 100%;
+  & .btn-md {
     position: relative;
-    resize: none;
-    border: 2px solid #dce4ec;
-    color: #8995b3;
-    border-radius: 35px;
-    font-size: rem(14px);
-    outline: none;
-    display: block;
-    width: 100%;
-    background-color: transparent;
-    padding: rem(25px) rem(230px) rem(92px) rem(37px);
-    transition: all 300ms linear 0ms;
-    &:focus {
-      border-color: $blue;
+    padding-left: rem(50px);
+    &::before {
+      content: "";
+      background: url("../img/submit.png") no-repeat;
+      display: block;
+      height: rem(13px);
+      width: rem(15px);
+      position: absolute;
+      left: rem(45px);
+      top: rem(20px);
     }
   }
 }

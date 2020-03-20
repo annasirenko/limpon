@@ -69,7 +69,7 @@
   color: $blue;
   top: 42%;
   left: 45%;
-  &:hover {
+  .video-button:hover & {
     color: #fff;
   }
 }
