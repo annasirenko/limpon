@@ -58,11 +58,22 @@
     text-align: left;
     display: block;
     margin-bottom: rem(15px);
+    @include tablets {
+      font-size: rem(18px);
+    }
   }
   &__title {
     @include title($color: #fff);
     letter-spacing: -1.5px;
     margin-bottom: rem(18px);
+    @include tablets {
+      font-size: rem(40px);
+      font-weight: 700;
+    }
+
+    @include phones {
+      font-size: rem(36px);
+    }
   }
   &__about {
     font-size: rem(18px);
@@ -73,9 +84,19 @@
   &__desc {
     padding-top: rem(50px);
     flex-basis: 48%;
+    @include tablets {
+      flex-basis: 70%;
+    }
+    @include phones {
+      flex-basis: 100%;
+      padding-top: 7.125rem;
+    }
   }
   &__user {
     position: relative;
+    @include phones {
+      text-align: center;
+    }
     input::-webkit-input-placeholder {
       color: #b1c3ee;
     }
@@ -103,6 +124,10 @@
       &:focus {
         border-color: $blue;
       }
+      @include tablets {
+        padding-right: 1.375rem;
+        margin-bottom: rem(20px);
+      }
     }
     & .btn-sm {
       position: absolute;
@@ -110,9 +135,15 @@
       right: 9px;
       padding: rem(17px) rem(50px);
       outline: none;
+      @include tablets {
+        position: static;
+      }
     }
   }
   &__image {
     padding-top: rem(50px);
+    @include phones {
+      display: none;
+    }
   }
 }

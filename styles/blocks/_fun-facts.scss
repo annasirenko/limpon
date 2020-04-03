@@ -12,6 +12,13 @@
     text-align: center;
     max-width: rem(500px);
     margin: 0 auto;
+    @include tablets {
+      font-size: rem(40px);
+      font-weight: 700;
+    }
+    @include phones {
+      max-width: 15.25rem;
+    }
   }
   &__subtitle {
     @include subtitle;
@@ -23,6 +30,9 @@
     display: flex;
     justify-content: space-around;
     margin-top: rem(50px);
+    @include phones {
+      flex-direction: column;
+    }
   }
   &__item {
     text-align: center;

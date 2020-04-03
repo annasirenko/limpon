@@ -7,12 +7,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include phones {
+      flex-direction: column;
+      text-align: center;
+    }
   }
   &__title {
     @include title;
     line-height: 1.2;
     letter-spacing: -1.5px;
     margin-bottom: rem(50px);
+    @include tablets {
+      font-size: rem(40px);
+      font-weight: 700;
+    }
+    @include phones {
+      font-size: rem(36px);
+    }
   }
 }
 .form {
@@ -79,7 +90,7 @@
     }
 
     & > input {
-      min-width: 514px;
+      min-width: rem(514px);
       position: relative;
       border: 2px solid #dce4ec;
       color: #8995b3;
@@ -88,9 +99,15 @@
       outline: none;
       display: block;
       width: 100%;
-      background-color: transparent;
-      padding: rem(25px) rem(230px) rem(25px) rem(37px);
+      background-color: #fff;
+      padding: rem(25px) 3.375rem rem(25px) rem(37px);
       transition: all 300ms linear 0ms;
+      @include tablets {
+        min-width: rem(430px);
+      }
+      @include phones {
+        min-width: rem(360px);
+      }
       &:focus {
         border-color: $blue;
       }
@@ -113,8 +130,8 @@
       font-size: rem(14px);
       outline: none;
       display: block;
-      background-color: transparent;
-      padding: rem(25px) rem(230px) rem(92px) rem(37px);
+      background-color: #fff;
+      padding: rem(25px) 3.375rem rem(92px) rem(37px);
       transition: all 300ms linear 0ms;
       &:focus {
         border-color: $blue;
@@ -124,6 +141,11 @@
   & .btn-md {
     position: relative;
     padding-left: rem(50px);
+    &:hover {
+      background-color: rgb(25, 43, 89);
+      color: #fff;
+      border-color: rgb(25, 43, 89);
+    }
     &::before {
       content: "";
       background: url("../img/submit.png") no-repeat;

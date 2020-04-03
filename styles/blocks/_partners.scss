@@ -5,8 +5,28 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: rem(116px);
+    @include tablets {
+      max-width: rem(590px);
+      margin: 0 auto;
+      padding-bottom: rem(116px);
+      & li:nth-child(3) + li:nth-child(4) {
+        margin-top: rem(30px);
+      }
+    }
+    @include phones {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      & li {
+        margin-top: rem(30px);
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
   }
 }

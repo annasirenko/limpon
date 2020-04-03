@@ -8,6 +8,10 @@
     @include title;
     line-height: 1.2;
     margin-bottom: rem(40px);
+    @include tablets {
+      font-size: rem(40px);
+      font-weight: 700;
+    }
   }
 
   &__desc {
@@ -38,6 +42,9 @@
     position: absolute;
     top: 3.437rem;
     right: 0;
+    @include tablets {
+      right: rem(-217px);
+    }
     & .video-button {
       height: 100px;
       width: 100px;
@@ -57,6 +64,14 @@
         background-color: #1085e4;
         border-color: #1085e4;
         color: #fff;
+      }
+      &__icon {
+        width: rem(13px);
+        height: rem(13px);
+        fill: $blue;
+        &:hover {
+          fill: #fff;
+        }
       }
     }
   }

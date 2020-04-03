@@ -7,14 +7,28 @@
   &__columns {
     display: flex;
     align-items: center;
+    @include phones {
+      flex-direction: column;
+    }
   }
   &__title {
     @include title;
     line-height: 1.2;
     margin-bottom: rem(30px);
+    @include tablets {
+      font-size: rem(40px);
+      font-weight: 700;
+    }
+    @include phones {
+      font-size: rem(36px);
+    }
   }
   &__desc {
     width: 59%;
+    @include phones {
+      width: 100%;
+      margin-bottom: rem(50px);
+    }
   }
   &__text {
     width: 93%;

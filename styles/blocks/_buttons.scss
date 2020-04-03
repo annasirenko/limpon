@@ -17,6 +17,9 @@
 
 .btn-sm-grey {
   @include sm(#cbdbe8, #7e8bae);
+  @include phones {
+    letter-spacing: 1.9px;
+  }
   &:hover {
     border: 1px solid #cbdbe8;
     background: #fff;

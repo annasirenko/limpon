@@ -1,5 +1,12 @@
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+  @include tablets {
+    font-size: 15px;
+  }
+  @include phones {
+    font-size: 14px;
+  }
 }
 body,
 html {
@@ -26,6 +33,13 @@ body {
   // max-width: rem(1110px);
   max-width: 70rem;
   width: 95%;
+  @include tablets {
+    max-width: rem(860px);
+    width: 90%;
+  }
+  @include phones {
+    max-width: rem(610px);
+  }
 }
 
 // .section {

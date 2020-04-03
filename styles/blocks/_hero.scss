@@ -5,9 +5,20 @@
   text-align: left;
   margin-bottom: rem(42px);
   max-width: rem(600px);
+  @include tablets {
+    font-size: rem(60px);
+    font-weight: 700;
+  }
+  @include phones {
+    font-size: rem(50px);
+  }
 }
 .btn-sm-grey {
   margin-left: rem(15px);
+  @include phones {
+    margin-top: rem(15px);
+    margin-left: 0;
+  }
 }
 
 .hero {
@@ -24,14 +35,36 @@
       align-items: flex-start;
       justify-content: flex-start;
       flex: 0.8;
+      @include phones {
+        align-items: center;
+      }
     }
     &-screenshot {
       background: url("../img/image.png") no-repeat;
       width: 800px;
       height: 600px;
       position: absolute;
-      right: rem(-138px);
+      right: -9rem;
       top: rem(189px);
+      @include desktopHd {
+        right: 21rem;
+      }
+      @include desktop {
+        right: -19rem;
+      }
+      @include tablets {
+        right: -35.625rem;
+      }
+      @include phones {
+        display: none;
+      }
+    }
+    &-buttons {
+      @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }

@@ -20,6 +20,13 @@
     line-height: 1.25;
     font-weight: bold;
     grid-area: a;
+    @include tablets {
+      font-size: rem(40px);
+      font-weight: 700;
+    }
+    @include phones {
+      font-size: rem(36px);
+    }
     & span {
       @include subtitle;
       display: block;

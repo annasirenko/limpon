@@ -13,10 +13,20 @@
     text-align: center;
     font-size: rem(40px);
     margin-bottom: rem(81px);
+    @include tablets {
+      font-size: rem(40px);
+      font-weight: 700;
+    }
+    @include phones {
+      font-size: rem(36px);
+    }
   }
   &__list {
     display: flex;
     justify-content: space-between;
+    @include tablets {
+      flex-direction: column;
+    }
   }
   &__item {
     background-color: #f5faff;
@@ -91,18 +101,30 @@
         color: #fff;
       }
     }
+    & > svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 60px;
+      transform: scaleY(-1);
+      fill: #edf4fb;
+    }
+    // .pricing-plans__item-list{
+    //     margin-bottom: 50px;
+    // }
   }
 }
 
-svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 60px;
-  transform: scaleY(-1);
-  fill: #edf4fb;
-}
-// .pricing-plans__item-list{
-//     margin-bottom: 50px;
+// svg {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   height: 100%;
+//   width: 60px;
+//   transform: scaleY(-1);
+//   fill: #edf4fb;
 // }
+// // .pricing-plans__item-list{
+// //     margin-bottom: 50px;
+// // }
