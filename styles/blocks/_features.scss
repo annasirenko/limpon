@@ -14,6 +14,22 @@
     grid-template-columns: 1fr 1fr 1fr;
     max-width: rem(1100px);
     margin: 0 auto;
+    @include tabletsPro {
+      padding: 0 35px 0 35px;
+    }
+    @include tablets {
+      display: grid;
+      grid-template-areas:
+        "a a"
+        " b c"
+        "d e"
+        " f g"
+        " h h";
+      grid-template-columns: 1fr 1fr;
+    }
+    @include phones {
+      grid-template-areas: "a a" "b b" "c c" "d d" "e e" "f f" "g g" "h h";
+    }
   }
   &__title {
     @include title($size: rem(40px));
@@ -23,6 +39,7 @@
     @include tablets {
       font-size: rem(40px);
       font-weight: 700;
+      text-align: center;
     }
     @include phones {
       font-size: rem(36px);
@@ -32,7 +49,7 @@
       display: block;
       font-size: rem(14px);
       letter-spacing: 2.8px;
-      margin-bottom: rem(27px);
+      margin-bottom: rem(18px);
     }
   }
   &__item {

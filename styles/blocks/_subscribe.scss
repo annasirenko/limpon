@@ -50,6 +50,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablets {
+      flex-direction: column-reverse;
+    }
   }
   &__subtitle {
     @include subtitle($color: #00bffe);
@@ -135,13 +138,16 @@
       right: 9px;
       padding: rem(17px) rem(50px);
       outline: none;
-      @include tablets {
+      @include phones {
         position: static;
       }
     }
   }
   &__image {
     padding-top: rem(50px);
+    @include tablets {
+      max-width: rem(200px);
+    }
     @include phones {
       display: none;
     }

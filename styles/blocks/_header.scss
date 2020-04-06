@@ -8,9 +8,6 @@ header {
 .nav__list {
   display: flex;
   margin-left: rem(157px);
-  @include tabletsPro {
-    margin-left: 2.8125rem;
-  }
 }
 .nav__item {
   font-size: rem(12px);
@@ -48,7 +45,7 @@ header {
     }
   }
 }
-@include tablets {
+@include tabletsPro {
   .nav {
     display: none;
     &__button {

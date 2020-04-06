@@ -31,7 +31,10 @@
     justify-content: space-around;
     margin-top: rem(50px);
     @include phones {
-      flex-direction: column;
+      flex-wrap: wrap;
+      width: 83%;
+      justify-content: space-around;
+      margin: 30px auto;
     }
   }
   &__item {
