@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./styles/main.css">
   <title>Limpon</title>
 </head>
@@ -14,24 +16,31 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero section">
+      <section id="hero" class="hero section">
         <div class="container">
           <header class="header">
             <a href="#" class="logo">
               <img src="./img/logo.png" alt="" class="logo-pic"></a>
             <nav class="nav">
               <ul class="nav__list">
-                <li class="nav__item"><a href="#">Home</a></li>
-                <li class="nav__item"><a href="#">Features</a></li>
-                <li class="nav__item"><a href="#">Video</a></li>
-                <li class="nav__item"><a href="#">Screens</a></li>
-                <li class="nav__item"><a href="#">Pricing</a></li>
-                <li class="nav__item"><a href="#">Team</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#hero">Home</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#features">Features</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#video">Video</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#screens">Screens</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#pricing">Pricing</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#team">Team</a></li>
+                <div class="nav__button">
+                  <a href="#free-trial" class="btn-sm">Free Trial</a>
+                </div>
               </ul>
+
             </nav>
-            <div class="nav__button">
-              <a href="#" class="btn-sm">Free Trial</a>
+            <div class="hamburger">
+
             </div>
+            <!-- <div class="nav__button">
+              <a href="#free-trial" class="btn-sm">Free Trial</a>
+            </div> -->
           </header>
         </div>
         <div class="hero__columns">
@@ -45,7 +54,8 @@
               </div>
             </div>
           </div>
-          <div class="hero__columns-screenshot">
+          <div class="hero__columns-screenshot animate__animated animate__fadeInRight wow">
+            <img src="./img/image.png" alt="">
 
           </div>
         </div>
@@ -85,7 +95,7 @@
           </ul>
         </div>
       </section>
-      <section class="features section">
+      <section id="features" class="features section">
         <div class="features__block">
 
           <h2 class="features__title">
@@ -204,7 +214,7 @@
                 <button type="submit" class="btn-sm">subscribe</button>
               </div>
             </div>
-            <div class="subscribe__image">
+            <div class="subscribe__image animate__animated animate__fadeInRight wow">
               <img src="./img/Robot.png" alt="Robot" class="subscribe__image-robot">
             </div>
 
@@ -274,7 +284,7 @@
               </h2>
             </div>
             <div class="fun-facts__value">
-              <ul class="fun-facts__list">
+              <ul class="fun-facts__list animate__animated animate__fadeInUp wow">
                 <li class="fun-facts__item">
                   <span class="fun-facts__number">53K</span>
                   <p class="fun-facts__property">layouts</p>
@@ -298,7 +308,7 @@
         <div class="circle"></div>
         <div class="rhombues"></div>
       </section>
-      <section class="presentation section">
+      <section id="video" class="presentation section">
         <div class="container">
           <div class="presentation__columns">
             <div class="presentation__desc">
@@ -326,9 +336,9 @@
             </div>
           </div>
         </div>
-        <div class="presentation__video">
+        <div class="presentation__video animate__animated animate__fadeInRight wow">
           <img src="./img/video.png" alt="" class="presentation__video-play">
-          <a class="video-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <a class="video-button" data-fancybox href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             <i class="fas fa-1.5x fa-play"></i></a>
 
         </div>
@@ -338,7 +348,7 @@
       <section class="advantages section">
         <div class="container">
           <div class="advantages__columns">
-            <div class="advantages__screenshot">
+            <div class="advantages__screenshot animate__animated animate__fadeInLeft wow">
               <img src="./img/Слой2.png" alt="" class="advantages__img">
             </div>
             <div class="advantages__desc">
@@ -379,7 +389,7 @@
                 <a href="#" class="btn-md">learn more</a>
               </div>
             </div>
-            <div class="properties__screenshot">
+            <div class="properties__screenshot animate__animated animate__fadeInRight wow">
               <img src="./img/Слой3.png" alt="" class="advantages__img">
             </div>
 
@@ -387,7 +397,7 @@
         </div>
 
       </section>
-      <section class="screen-preview section">
+      <section id="screens" class="screen-preview section">
 
         <div class="container">
           <div class="screen-preview__block">
@@ -396,7 +406,7 @@
                 <span class="screen-preview__subtitle">screen preview</span>Screenshot With Details
               </h2>
             </div>
-            <div class="screen-preview__pic">
+            <div class="screen-preview__pic animate__animated animate__fadeInUp wow">
               <img src="./img/Слой 5.png" alt="" class="screen-preview__screenshot">
             </div>
           </div>
@@ -470,7 +480,7 @@
           </div>
         </div>
       </section>
-      <section class="pricing-plans">
+      <section id="pricing" class="pricing-plans">
         <div class="container">
           <div class="pricing-plans__block">
             <div class="pricing-plans__desc">
@@ -478,7 +488,7 @@
                 <span class="pricing-plans__subtitle">our plans</span>Pricing Plans
               </h2>
             </div>
-            <ul class="pricing-plans__list">
+            <ul class="pricing-plans__list animate__animated animate__fadeInUp wow">
               <li class="pricing-plans__item">
                 <svg preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%"
                   xmlns="http://www.w3.org/2000/svg">
@@ -537,7 +547,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section id="team" class="team">
         <div class="container">
           <div class="team__block">
             <div class="team__desc">
@@ -653,10 +663,10 @@
           </div>
         </div>
       </section>
-      <section class="trial">
+      <section id="free-trial" class="trial">
         <div class="container">
           <div class="trial__columns">
-            <div class="trial__left">
+            <div class="trial__left animate__animated animate__fadeInLeft wow">
               <img src="./img/Слой8.png" alt="" class="trial-pic">
             </div>
             <div class="trial__right">
@@ -738,6 +748,8 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <script src="./scripts/main.js"></script>
 </body>
 

@@ -1,14 +1,42 @@
 header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: rem(310px);
+  z-index: 1;
+  transition: all .3s linear;
+  padding: rem(48px) rem(20px);
+ 
+ 
+  // padding: 0.625rem 1.25rem;
+  // margin-bottom: rem(310px);
+  
+  &.sticky{
+    // padding: rem(10px) rem(20px);
+    padding: rem(20px) rem(20px);
+    background: rgba($color: #fff, $alpha: .8);
+    box-shadow:0 3px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    top: 0;
+    
+   
+  }
+  
+}
+
+.nav{
+  @include tabletsPro{
+    width: 48%;
+  }
+  @include tablets{
+    width: 100%;
+  }
 }
 
 .nav__list {
   display: flex;
   margin-left: rem(157px);
-}
+ }
 .nav__item {
   font-size: rem(12px);
   font-weight: bold;
@@ -17,12 +45,13 @@ header {
   margin-right: rem(43px);
   transition: 0.3s linear;
   text-transform: uppercase;
+ 
   &:hover {
     color: $blue;
   }
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
   & a {
     display: block;
     position: relative;
@@ -46,10 +75,112 @@ header {
   }
 }
 @include tabletsPro {
+  header{
+    padding: rem(20px) rem(20px);    
+    background: rgba($color: #fff, $alpha: .8);
+    box-shadow:0 3px 20px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    
+
+  }
   .nav {
-    display: none;
-    &__button {
-      display: none;
+    position: absolute;
+    background: #fff; 
+    padding-top: 18.25rem;
+    padding-bottom: 2.125rem;
+    right: 0;
+    transform: translateY(-100%);  
+    justify-content: center;
+    transition: all .3s linear;
+    &_active{
+      transform: translateY(0%);
+    }
+    &__list{
+      flex-direction: column;
+      margin-left: 0;
+      align-items: center;
+      
+    }
+    &__item{
+      margin-right: 0;
+      margin-bottom: rem(10px);
+      font-size: rem(14px);
+      
+    }
+    &__button{
+      margin-top: rem(10px);
+    }
+    
+    // display: none;
+    // flex-direction: column;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+    // background-color: #9D2929;
+    // width: 250px;
+    // padding-bottom: 40px;
+    // display: none;
+    // &_active{
+    //   display: flex;
+    // }
+  }
+  .hamburger{
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    width: 30px;
+    height: 3px;
+    background-color: #1f2233;
+    border: none;
+    cursor: pointer;
+    &:before{
+      content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    background-color: #1f2233;
+    transition: transform 0.2s;
+    margin-top: -7px;
+    }
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background-color: #1f2233;
+      transition: transform 0.2s;
+      margin-top: 7px;
+    }
+
+    &_active {
+      height: 0;
+
+      &:before {
+        transform: rotate(45deg);
+        margin-top: 0;
+        width: 30px;
+    }
+    &:after {
+        transform: rotate(-45deg);
+        margin-top: 0;
     }
   }
+ 
+  }
 }
+
+@include tablets{
+  header{
+    width: 90%
+  }
+  
+}
+
+ 
