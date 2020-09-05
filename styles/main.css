@@ -681,6 +681,11 @@ textarea:focus:-ms-input-placeholder {
   -webkit-transition: all 0.3 linear;
   -o-transition: all 0.3 linear;
   transition: all 0.3 linear; }
+  @media screen and (max-width: 480px) {
+    .fas {
+      font-size: 8px;
+      top: 40%;
+      left: 40%; } }
   .video-button:hover .fas {
     color: #fff; }
 
@@ -695,10 +700,10 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 1;
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  z-index: 3;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   padding: 3rem 1.25rem; }
   header.sticky {
     padding: 1.25rem 1.25rem;
@@ -720,6 +725,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-left: 9.8125rem; }
 
 .nav__item {
@@ -727,18 +735,17 @@ header {
   font-weight: bold;
   color: #6e7ea9;
   letter-spacing: 2.4px;
-  margin-right: 2.6875rem;
+  margin-right: 2.3125rem;
   -webkit-transition: 0.3s linear;
   -o-transition: 0.3s linear;
   transition: 0.3s linear;
   text-transform: uppercase; }
-  .nav__item:hover {
+  .nav__item.active, .nav__item:hover {
     color: #1085e4; }
   .nav__item a {
     display: block;
     position: relative; }
     .nav__item a:after {
-      background: none repeat scroll 0 0 transparent;
       bottom: 0;
       content: "";
       display: block;
@@ -773,13 +780,23 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear; }
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    z-index: 3; }
     .nav_active {
       -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      transform: translateY(0%); }
+      transform: translateY(0%);
+      background: rgba(255, 255, 255, 0.8);
+      -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+      z-index: 3; } }
+    @media screen and (max-width: 1024px) and (max-width: 768px) {
+      .nav_active {
+        background-color: #fff; } }
+
+@media screen and (max-width: 1024px) {
     .nav__list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -804,9 +821,10 @@ header {
     height: 3px;
     background-color: #1f2233;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 3; }
     .hamburger:before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       top: 0;
@@ -821,7 +839,7 @@ header {
       transition: transform 0.2s, -webkit-transform 0.2s;
       margin-top: -7px; }
     .hamburger:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       top: 0;
@@ -1048,6 +1066,19 @@ header {
       -webkit-transform: translateY(-9px);
       -ms-transform: translateY(-9px);
       transform: translateY(-9px); }
+  .features__card-logo {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .features__card-logo:hover {
+      -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1); }
+      @media screen and (max-width: 1024px) {
+        .features__card-logo:hover {
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none; } }
   .features__card-icon {
     margin: 0 auto 1.25rem; }
   .features__card-title {
@@ -1494,7 +1525,12 @@ header {
     right: 0; }
     @media screen and (max-width: 768px) {
       .presentation__video {
-        right: -13.5625rem; } }
+        width: 49%;
+        right: -1.5625rem; } }
+    @media screen and (max-width: 480px) {
+      .presentation__video {
+        top: 22.437rem;
+        right: -0.5625rem; } }
     .presentation__video .video-button {
       height: 100px;
       width: 100px;
@@ -1513,6 +1549,10 @@ header {
       -webkit-transition: all 300ms linear 0ms;
       -o-transition: all 300ms linear 0ms;
       transition: all 300ms linear 0ms; }
+      @media screen and (max-width: 480px) {
+        .presentation__video .video-button {
+          height: 50px;
+          width: 50px; } }
       .presentation__video .video-button:hover {
         background-color: #1085e4;
         border-color: #1085e4;
@@ -1683,13 +1723,9 @@ header {
   .testimonials__item {
     background-color: #fff;
     border-radius: 10px;
-    -ms-flex-preferred-size: 32%;
-    flex-basis: 32%;
     -webkit-box-shadow: 0px 16px 32px 0px rgba(185, 185, 185, 0.2);
     box-shadow: 0px 16px 32px 0px rgba(185, 185, 185, 0.2);
     padding: 34px 40px 40px 40px; }
-    .testimonials__item:last-child {
-      margin-right: 0; }
   .testimonials__info {
     line-height: 1.8;
     font-size: 0.875rem;
@@ -1859,6 +1895,18 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media screen and (max-width: 768px) {
+      .team__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: unset;
+        -ms-flex-align: unset;
+        align-items: unset; } }
   .team__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1894,12 +1942,18 @@ header {
     text-align: center;
     margin-top: 1.875rem;
     margin-bottom: 0.875rem; }
+    @media screen and (max-width: 768px) {
+      .team__user-info {
+        margin-top: 4.875rem; } }
   .team__user-img {
     position: absolute;
     top: -5.375rem;
     left: 0;
     right: 0;
     margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .team__user-img {
+        top: -1.375rem; } }
   .team__user-occ {
     font-size: 1.125rem;
     font-weight: 800;

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
   <link rel="stylesheet" href="./styles/main.css">
   <title>Limpon</title>
 </head>
@@ -23,7 +24,7 @@
               <img src="./img/logo.png" alt="" class="logo-pic"></a>
             <nav class="nav">
               <ul class="nav__list">
-                <li class="nav__item"><a class="nav__item-link" href="#hero">Home</a></li>
+                <li class="nav__item active"><a class="nav__item-link" href="#hero">Home</a></li>
                 <li class="nav__item"><a class="nav__item-link" href="#features">Features</a></li>
                 <li class="nav__item"><a class="nav__item-link" href="#video">Video</a></li>
                 <li class="nav__item"><a class="nav__item-link" href="#screens">Screens</a></li>
@@ -334,14 +335,20 @@
                 </li>
               </ul>
             </div>
+            <div class="presentation__video animate__animated animate__fadeInRight wow">
+              <img src="./img/video.png" alt="" class="presentation__video-play">
+              <a class="video-button" data-fancybox href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <i class="fas fa-1.5x fa-play"></i></a>
+
+            </div>
           </div>
         </div>
-        <div class="presentation__video animate__animated animate__fadeInRight wow">
+        <!-- <div class="presentation__video animate__animated animate__fadeInRight wow">
           <img src="./img/video.png" alt="" class="presentation__video-play">
           <a class="video-button" data-fancybox href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             <i class="fas fa-1.5x fa-play"></i></a>
 
-        </div>
+        </div> -->
 
 
       </section>
@@ -421,62 +428,65 @@
                 <span class="testimonials__subtitle">testimonials</span> Our Happy Clients
               </h2>
             </div>
-            <ul class="testimonials__list">
-              <li class="testimonials__item">
+            <div class="swiper-container">
+              <ul class="testimonials__list swiper-wrapper animate__animated animate__fadeInUp wow">
+                <li class="testimonials__item swiper-slide">
+                  <p class="testimonials__info">It is a long established fact that a read
+                    her will be distracted by the readable
+                    content of a page when looking.</p>
+                  <div class="testimonials__user">
+                    <div class="testimonials__user-pic">
+                      <img src="./img/woman.png" alt="" class="testimonials__user-woman">
+                    </div>
+                    <div class="testimonials__user-desc">
+                      <div class="testimonials__user-name">
+                        Rolin B. Mirano
+                      </div>
+                      <div class="testimonials__user-occup">
+                        ceo, uihub
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="testimonials__item swiper-slide">
+                  <p class="testimonials__info">It is a long established fact that a read
+                    her will be distracted by the readable
+                    content of a page when looking.</p>
+                  <div class="testimonials__user">
+                    <div class="testimonials__user-pic">
+                      <img src="./img/woman.png" alt="" class="testimonials__user-woman">
+                    </div>
+                    <div class="testimonials__user-desc">
+                      <div class="testimonials__user-name">
+                        Rolin B. Mirano
+                      </div>
+                      <div class="testimonials__user-occup">
+                        ceo, uihub
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="testimonials__item swiper-slide">
                 <p class="testimonials__info">It is a long established fact that a read
-                  her will be distracted by the readable
-                  content of a page when looking.</p>
-                <div class="testimonials__user">
-                  <div class="testimonials__user-pic">
-                    <img src="./img/woman.png" alt="" class="testimonials__user-woman">
-                  </div>
-                  <div class="testimonials__user-desc">
-                    <div class="testimonials__user-name">
-                      Rolin B. Mirano
+                    her will be distracted by the readable
+                    content of a page when looking.</p>
+                  <div class="testimonials__user">
+                    <div class="testimonials__user-pic">
+                      <img src="./img/woman.png" alt="" class="testimonials__user-woman">
                     </div>
-                    <div class="testimonials__user-occup">
-                      ceo, uihub
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="testimonials__item">
-                <p class="testimonials__info">It is a long established fact that a read
-                  her will be distracted by the readable
-                  content of a page when looking.</p>
-                <div class="testimonials__user">
-                  <div class="testimonials__user-pic">
-                    <img src="./img/woman.png" alt="" class="testimonials__user-woman">
-                  </div>
-                  <div class="testimonials__user-desc">
-                    <div class="testimonials__user-name">
-                      Rolin B. Mirano
-                    </div>
-                    <div class="testimonials__user-occup">
-                      ceo, uihub
+                    <div class="testimonials__user-desc">
+                      <div class="testimonials__user-name">
+                        Rolin B. Mirano
+                      </div>
+                      <div class="testimonials__user-occup">
+                        ceo, uihub
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="testimonials__item">
-                <p class="testimonials__info">It is a long established fact that a read
-                  her will be distracted by the readable
-                  content of a page when looking.</p>
-                <div class="testimonials__user">
-                  <div class="testimonials__user-pic">
-                    <img src="./img/woman.png" alt="" class="testimonials__user-woman">
-                  </div>
-                  <div class="testimonials__user-desc">
-                    <div class="testimonials__user-name">
-                      Rolin B. Mirano
-                    </div>
-                    <div class="testimonials__user-occup">
-                      ceo, uihub
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -554,112 +564,113 @@
               <h2 class="team__title">
                 <span class="team__subtitle">angels</span> Our Team
               </h2>
-            </div>
-            <ul class="team__list">
-              <li class="team__item">
-                <div class="team__user-pic">
-                  <img src="./img/team1.jpg" alt="" class="team__user-img">
-                </div>
-                <div class="team__user-info">
-                  <div class="team__user-occ">
-                    founder
+            </div>            
+              <ul class="team__list animate__animated animate__fadeInUp wow">
+                <li class="team__item">
+                  <div class="team__user-pic">
+                    <img src="./img/team1.jpg" alt="" class="team__user-img">
                   </div>
-                  <div class="team__user-name">
-                    Ricardo T. Obrien
+                  <div class="team__user-info">
+                    <div class="team__user-occ">
+                      founder
+                    </div>
+                    <div class="team__user-name">
+                      Ricardo T. Obrien
+                    </div>
                   </div>
-                </div>
-                <button class="team__user-button team__user-button-ricardo">
-                  +
-                </button>
-                <ul class="team__socials team__socials-ricardo" style="display: none;">
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-fb team__user-button">
+                  <button class="team__user-button team__user-button-ricardo">
+                    +
+                  </button>
+                  <ul class="team__socials team__socials-ricardo" style="display: none;">
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-fb team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-tw team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-tw team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-be team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-be team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-inst team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-inst team__user-button">
 
-                    </a></li>
-                </ul>
-              </li>
-              <li class="team__item">
-                <div class="team__user-pic">
-                  <img src="./img/team2.png" alt="" class="team__user-img">
-                </div>
-                <div class="team__user-info">
-                  <div class="team__user-occ">
-                    ceo
+                      </a></li>
+                  </ul>
+                </li>
+                <li class="team__item">
+                  <div class="team__user-pic">
+                    <img src="./img/team2.png" alt="" class="team__user-img">
                   </div>
-                  <div class="team__user-name">
-                    Alberto Del Rio
+                  <div class="team__user-info">
+                    <div class="team__user-occ">
+                      ceo
+                    </div>
+                    <div class="team__user-name">
+                      Alberto Del Rio
+                    </div>
                   </div>
-                </div>
-                <button class="team__user-button team__user-button-alberto">
-                  +
-                </button>
-                <ul class="team__socials team__socials-alberto " style="display: none;">
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-fb team__user-button">
+                  <button class="team__user-button team__user-button-alberto">
+                    +
+                  </button>
+                  <ul class="team__socials team__socials-alberto " style="display: none;">
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-fb team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-tw team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-tw team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-be team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-be team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-inst team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-inst team__user-button">
 
-                    </a></li>
-                </ul>
-              </li>
-              <li class="team__item">
-                <div class="team__user-pic">
-                  <img src="./img/team3.png" alt="" class="team__user-img">
-                </div>
-                <div class="team__user-info">
-                  <div class="team__user-occ">
-                    designer
+                      </a></li>
+                  </ul>
+                </li>
+                <li class="team__item">
+                  <div class="team__user-pic">
+                    <img src="./img/team3.png" alt="" class="team__user-img">
                   </div>
-                  <div class="team__user-name">
-                    Thomas Alva Adison
+                  <div class="team__user-info">
+                    <div class="team__user-occ">
+                      designer
+                    </div>
+                    <div class="team__user-name">
+                      Thomas Alva Adison
+                    </div>
                   </div>
-                </div>
-                <button class="team__user-button team__user-button-thomas">
-                  +
-                </button>
-                <ul class="team__socials team__socials-thomas" style="display: none;">
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-fb team__user-button">
+                  <button class="team__user-button team__user-button-thomas">
+                    +
+                  </button>
+                  <ul class="team__socials team__socials-thomas" style="display: none;">
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-fb team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-tw team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-tw team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-be team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-be team__user-button">
 
-                    </a></li>
-                  <li class="team__socials-item">
-                    <a href="#" class="team__socials-icon team__socials-inst team__user-button">
+                      </a></li>
+                    <li class="team__socials-item">
+                      <a href="#" class="team__socials-icon team__socials-inst team__user-button">
 
-                    </a></li>
-                </ul>
+                      </a></li>
+                  </ul>
 
-              </li>
-            </ul>
+                </li>
+              </ul>            
+            
           </div>
         </div>
       </section>
@@ -748,8 +759,10 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
   <script src="./scripts/main.js"></script>
 </body>
 

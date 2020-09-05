@@ -74,6 +74,12 @@
   left: 45%;
   transform: rotate(117deg);
   transition: all 0.3 linear;
+  @include phones {
+    font-size: 8px;
+    top: 40%;
+    left: 40%;
+  }
+
   .video-button:hover & {
     color: #fff;
   }
