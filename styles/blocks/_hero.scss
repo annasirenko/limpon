@@ -1,19 +1,19 @@
-.hero__columns{
-    &-title {
-  @include title($size: rem(80px), $weight: 600);
-  line-height: 1.13;
-  letter-spacing: -2.4px;
-  text-align: left;
-  margin-bottom: rem(42px);
-  max-width: rem(600px);
-  @include tablets {
-    font-size: rem(60px);
-    font-weight: 700;
+.hero__columns {
+  &-title {
+    @include title($size: rem(80px), $weight: 600);
+    line-height: 1.13;
+    letter-spacing: -2.4px;
+    text-align: left;
+    margin-bottom: rem(42px);
+    max-width: rem(600px);
+    @include tablets {
+      font-size: rem(60px);
+      font-weight: 700;
+    }
+    @include phones {
+      font-size: rem(50px);
+    }
   }
-  @include phones {
-    font-size: rem(50px);
-  }
-}
 }
 .btn-sm-grey {
   margin-left: rem(15px);
@@ -50,10 +50,12 @@
       right: -9rem;
       top: rem(189px);
       @include desktopHd {
-        right: 21rem;
+        // right: 21rem;
+        right: 2rem;
       }
       @include desktop {
-        right: -19rem;
+        right: -28rem;
+        // right: -19rem;
       }
       @include tablets {
         right: -35.625rem;

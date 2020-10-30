@@ -1,769 +1,955 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon/favicon.png"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Limpon</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Limpon</title>
-</head>
-
-<body>
-  <div class="wrapper">
-    <div class="maincontent">
-      <section id="hero" class="hero section">
-        <div class="container">
-          <header class="header">
-            <a href="#" class="logo">
-              <img src="./img/logo.png" alt="" class="logo-pic"></a>
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item active"><a class="nav__item-link" href="#hero">Home</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="#features">Features</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="#video">Video</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="#screens">Screens</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="#pricing">Pricing</a></li>
-                <li class="nav__item"><a class="nav__item-link" href="#team">Team</a></li>
-                <div class="nav__button">
-                  <a href="#free-trial" class="btn-sm">Free Trial</a>
-                </div>
-              </ul>
-
-            </nav>
-            <div class="hamburger">
-
-            </div>
-            <!-- <div class="nav__button">
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <section id="hero" class="hero section">
+          <div class="container">
+            <header class="header">
+              <a href="#" class="logo">
+                <img src="./img/logo.png" alt="" class="logo-pic"
+              /></a>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item active">
+                    <a class="nav__item-link" href="#hero">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-link" href="#features">Features</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-link" href="#video">Video</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-link" href="#screens">Screens</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-link" href="#pricing">Pricing</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__item-link" href="#team">Team</a>
+                  </li>
+                  <div class="nav__button">
+                    <a href="#free-trial" class="btn-sm">Free Trial</a>
+                  </div>
+                </ul>
+              </nav>
+              <div class="hamburger"></div>
+              <!-- <div class="nav__button">
               <a href="#free-trial" class="btn-sm">Free Trial</a>
             </div> -->
-          </header>
-        </div>
-        <div class="hero__columns">
+            </header>
+          </div>
+          <div class="hero__columns">
+            <div class="container">
+              <div class="hero__columns-desc">
+                <h1 class="hero__columns-title">
+                  Best Software <br />
+                  Landing Page
+                </h1>
+                <div class="hero__columns-buttons">
+                  <a href="#free-trial" class="btn-md">Get started now</a>
+                  <a href="#features" class="btn-sm-grey">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hero__columns-screenshot animate__animated animate__fadeInRight wow"
+            >
+              <img src="./img/image.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="partners section">
           <div class="container">
-            <div class="hero__columns-desc">
-              <h1 class="hero__columns-title">Best Software <br> Landing Page</h1>
-              <div class="hero__columns-buttons">
-                <a href="" class="btn-md">Get started now</a>
-                <a href="" class="btn-sm-grey">Learn more</a>
+            <ul class="partners__list">
+              <li class="partners__item">
+                <div class="partner__card-one">
+                  <a href="#" class="partner__link">
+                    <img
+                      src="./img/bg_1.png"
+                      alt=""
+                      class="partner__link-logo"
+                    />
+                  </a>
+                </div>
+              </li>
+              <li class="partners__item">
+                <div class="partner__card-two">
+                  <a href="#" class="partner__link">
+                    <img
+                      src="./img/bg_2.png"
+                      alt=""
+                      class="partner__link-logo"
+                    />
+                  </a>
+                </div>
+              </li>
+              <li class="partners__item">
+                <div class="partner__card-three">
+                  <a href="#" class="partner__link">
+                    <img
+                      src="./img/bg_3.png"
+                      alt=""
+                      class="partner__link-logo"
+                    />
+                  </a>
+                </div>
+              </li>
+              <li class="partners__item">
+                <div class="partner__card--four">
+                  <a href="#" class="partner__link">
+                    <img
+                      src="./img/bg_4.png"
+                      alt=""
+                      class="partner__link-logo"
+                    />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="features" class="features section">
+          <div class="features__block">
+            <h2 class="features__title">
+              <span>Features</span> Best Features Ever Seen
+            </h2>
 
+            <div class="features__item grid__item-1">
+              <div class="features__card-logo">
+                <img src="./img/icon.png" alt="" class="features__card-icon" />
               </div>
-            </div>
-          </div>
-          <div class="hero__columns-screenshot animate__animated animate__fadeInRight wow">
-            <img src="./img/image.png" alt="">
-
-          </div>
-        </div>
-      </section>
-      <section class="partners section">
-        <div class="container">
-          <ul class="partners__list">
-            <li class="partners__item">
-              <div class="partner__card-one">
-                <a href="#" class="partner__link">
-                  <img src="./img/bg_1.png" alt="" class="partner__link-logo">
-                </a>
-              </div>
-            </li>
-            <li class="partners__item">
-              <div class="partner__card-two">
-                <a href="#" class="partner__link">
-                  <img src="./img/bg_2.png" alt="" class="partner__link-logo">
-
-                </a>
-              </div>
-            </li>
-            <li class="partners__item">
-              <div class="partner__card-three">
-                <a href="#" class="partner__link">
-                  <img src="./img/bg_3.png" alt="" class="partner__link-logo">
-                </a>
-              </div>
-            </li>
-            <li class="partners__item">
-              <div class="partner__card--four">
-                <a href="#" class="partner__link">
-                  <img src="./img/bg_4.png" alt="" class="partner__link-logo">
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section id="features" class="features section">
-        <div class="features__block">
-
-          <h2 class="features__title">
-            <span>Features</span> Best Features Ever Seen
-          </h2>
-
-
-          <div class="features__item grid__item-1">
-
-            <div class="features__card-logo">
-              <img src="./img/icon.png" alt="" class="features__card-icon">
-            </div>
-            <h3 class="features__card-title">Well Documented</h3>
-            <p class="features__card-specification">
-              Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,
-              sed don eiusmod tempor incididunt.
-            </p>
-            <a href="#" class="features__card-link">Read More</a>
-
-          </div>
-          <div class="features__item grid__item-2">
-
-            <div class="features__card-logo">
-              <img src="./img/icon3.png" alt="" class="features__card-icon">
-            </div>
-            <h3 class="features__card-title">Highly Customizable</h3>
-            <p class="features__card-specification">
-              Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,
-              sed don eiusmod tempor incididunt.
-            </p>
-            <a href="#" class="features__card-link">Read More</a>
-
-          </div>
-          <div class="features__item grid__item-3">
-
-            <div class="features__card-logo">
-              <img src="./img/icon1.png" alt="" class="features__card-icon">
-            </div>
-            <h3 class="features__card-title">
-              Mobile Friendly Design
-            </h3>
-            <p class="features__card-specification">
-              Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,
-              sed don eiusmod tempor incididunt.
-            </p>
-            <a href="#" class="features__card-link">Read More</a>
-
-          </div>
-          <div class="features__item grid__item-4">
-
-            <div class="features__card-logo">
-              <img src="./img/icon5.png" alt="" class="features__card-icon">
-            </div>
-            <h3 class="features__card-title">Responsive Design</h3>
-            <p class="features__card-specification">
-              Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,
-              sed don eiusmod tempor incididunt.
-            </p>
-            <a href="#" class="features__card-link">Read More</a>
-
-          </div>
-          <div class="features__item grid__item-5">
-
-            <div class="features__card-logo">
-              <img src="./img/icon6.png" alt="" class="features__card-icon">
-            </div>
-            <h3 class="features__card-title">24/7 Online Support</h3>
-            <p class="features__card-specification">
-              Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,
-              sed don eiusmod tempor incididunt.
-            </p>
-            <a href="#" class="features__card-link">Read More</a>
-
-          </div>
-          <div class="features__item grid__item-6">
-
-            <div class="features__card-logo">
-              <img src="./img/icon4.png" alt="" class="features__card-icon">
-            </div>
-            <h3 class="features__card-title">Easy To Edit</h3>
-            <p class="features__card-specification">
-              Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,
-              sed don eiusmod tempor incididunt.
-            </p>
-            <a href="#" class="features__card-link">Read More</a>
-
-          </div>
-
-
-          <blockquote class="features__review grid-text">
-            <p class="features__review-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-            <p class="features__review-author">
-              <span>Rosalina Pong</span> - Founder, uithemes
-            </p>
-          </blockquote>
-        </div>
-      </section>
-      <section class="subscribe section">
-        <div class="container">
-          <div class="subscribe__columns">
-            <div class="subscribe__desc">
-              <h2 class="subscribe__title">
-                <span class="subscribe__subtitle">Subscribe</span> Signup For A Trial
-              </h2>
-              <p class="subscribe__about">Create your free account now & get 30 days free
-                trial<br>No credit card required</p>
-              <div class="subscribe__user">
-                <input type="email" placeholder="Enter your email address">
-                <button type="submit" class="btn-sm">subscribe</button>
-              </div>
-            </div>
-            <div class="subscribe__image animate__animated animate__fadeInRight wow">
-              <img src="./img/Robot.png" alt="Robot" class="subscribe__image-robot">
-            </div>
-
-
-          </div>
-        </div>
-      </section>
-      <section class="software section">
-        <div class="software__columns">
-          <div class="software__wrap">
-            <div class="software__desc">
-              <div class="gear__icon">
-
-              </div>
-              <h2 class="software__title">Grab Your Software <br>
-                With Amazing Features</h2>
-              <p class="software__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit
-                esse cillum.</p>
-              <dl class="software__list">
-                <dt class="software__list-term">01. Clean Design</dt>
-                <dd class="software__list-definition">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip
-                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                </dd>
-                <dt class="software__list-term">02. Easy To Customize</dt>
-                <dd class="software__list-definition">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip
-                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                </dd>
-                <dt class="software__list-term">03. Responsive Design</dt>
-                <dd class="software__list-definition">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip
-                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                </dd>
-                <dt class="software__list-term">04. 24/7 Support</dt>
-                <dd class="software__list-definition">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip
-                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                </dd>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="fun-facts section">
-        <div class="container">
-          <div class="fun-facts__columns">
-            <div class="fun-facts__desc">
-              <h2 class="fun-facts__title">
-                <span class="fun-facts__subtitle">Fun Facts</span> Some Fun Facts
-                About Dashboard
-              </h2>
-            </div>
-            <div class="fun-facts__value">
-              <ul class="fun-facts__list animate__animated animate__fadeInUp wow">
-                <li class="fun-facts__item">
-                  <span class="fun-facts__number">53K</span>
-                  <p class="fun-facts__property">layouts</p>
-                </li>
-                <li class="fun-facts__item">
-                  <span class="fun-facts__number">10K</span>
-                  <p class="fun-facts__property">projects</p>
-                </li>
-                <li class="fun-facts__item">
-                  <span class="fun-facts__number">12K</span>
-                  <p class="fun-facts__property">cup coffee</p>
-                </li>
-                <li class="fun-facts__item">
-                  <span class="fun-facts__number">120</span>
-                  <p class="fun-facts__property">awards</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="circle"></div>
-        <div class="rhombues"></div>
-      </section>
-      <section id="video" class="presentation section">
-        <div class="container">
-          <div class="presentation__columns">
-            <div class="presentation__desc">
-              <h2 class="presentation__title">Meet With <br>
-                Future Landingpage</h2>
-              <p class="presentation__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+              <h3 class="features__card-title">Well Documented</h3>
+              <p class="features__card-specification">
+                Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed
+                don eiusmod tempor incididunt.
               </p>
-              <p class="presentation__available">available now</p>
-              <ul class="presentation__list">
-                <li class="presentation__item">
-                  <a href="#" class="presentation__app" target="_blank">
-                    <img src="./img/google-play.png" alt="" class="presentation__app-icon">
-                  </a>
-                </li>
-                <li class="presentation__item">
-                  <a href="#" class="presentation__app" target="_blank">
-                    <img src="./img/app-store.png" alt="" class="presentation__app-icon">
-                  </a>
-                </li>
-              </ul>
+              <a href="#" class="features__card-link">Read More</a>
             </div>
-            <div class="presentation__video animate__animated animate__fadeInRight wow">
-              <img src="./img/video.png" alt="" class="presentation__video-play">
-              <a class="video-button" data-fancybox href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <i class="fas fa-1.5x fa-play"></i></a>
+            <div class="features__item grid__item-2">
+              <div class="features__card-logo">
+                <img src="./img/icon3.png" alt="" class="features__card-icon" />
+              </div>
+              <h3 class="features__card-title">Highly Customizable</h3>
+              <p class="features__card-specification">
+                Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed
+                don eiusmod tempor incididunt.
+              </p>
+              <a href="#" class="features__card-link">Read More</a>
+            </div>
+            <div class="features__item grid__item-3">
+              <div class="features__card-logo">
+                <img src="./img/icon1.png" alt="" class="features__card-icon" />
+              </div>
+              <h3 class="features__card-title">Mobile Friendly Design</h3>
+              <p class="features__card-specification">
+                Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed
+                don eiusmod tempor incididunt.
+              </p>
+              <a href="#" class="features__card-link">Read More</a>
+            </div>
+            <div class="features__item grid__item-4">
+              <div class="features__card-logo">
+                <img src="./img/icon5.png" alt="" class="features__card-icon" />
+              </div>
+              <h3 class="features__card-title">Responsive Design</h3>
+              <p class="features__card-specification">
+                Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed
+                don eiusmod tempor incididunt.
+              </p>
+              <a href="#" class="features__card-link">Read More</a>
+            </div>
+            <div class="features__item grid__item-5">
+              <div class="features__card-logo">
+                <img src="./img/icon6.png" alt="" class="features__card-icon" />
+              </div>
+              <h3 class="features__card-title">24/7 Online Support</h3>
+              <p class="features__card-specification">
+                Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed
+                don eiusmod tempor incididunt.
+              </p>
+              <a href="#" class="features__card-link">Read More</a>
+            </div>
+            <div class="features__item grid__item-6">
+              <div class="features__card-logo">
+                <img src="./img/icon4.png" alt="" class="features__card-icon" />
+              </div>
+              <h3 class="features__card-title">Easy To Edit</h3>
+              <p class="features__card-specification">
+                Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed
+                don eiusmod tempor incididunt.
+              </p>
+              <a href="#" class="features__card-link">Read More</a>
+            </div>
 
+            <blockquote class="features__review grid-text">
+              <p class="features__review-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+              <p class="features__review-author">
+                <span>Rosalina Pong</span> - Founder, uithemes
+              </p>
+            </blockquote>
+          </div>
+        </section>
+        <section class="subscribe section">
+          <div class="container">
+            <div class="subscribe__columns">
+              <div class="subscribe__desc">
+                <h2 class="subscribe__title">
+                  <span class="subscribe__subtitle">Subscribe</span> Signup For
+                  A Trial
+                </h2>
+                <p class="subscribe__about">
+                  Create your free account now & get 30 days free trial<br />No
+                  credit card required
+                </p>
+                <div class="subscribe__user">
+                  <input type="email" placeholder="Enter your email address" />
+                  <button type="submit" class="btn-sm">subscribe</button>
+                </div>
+              </div>
+              <div
+                class="subscribe__image animate__animated animate__fadeInRight wow"
+              >
+                <img
+                  src="./img/Robot.png"
+                  alt="Robot"
+                  class="subscribe__image-robot"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <div class="presentation__video animate__animated animate__fadeInRight wow">
+        </section>
+        <section class="software section">
+          <div class="software__columns">
+            <div class="software__wrap">
+              <div class="software__desc">
+                <div class="gear__icon"></div>
+                <h2 class="software__title">
+                  Grab Your Software <br />
+                  With Amazing Features
+                </h2>
+                <p class="software__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+                <dl class="software__list">
+                  <dt class="software__list-term">01. Clean Design</dt>
+                  <dd class="software__list-definition">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum.
+                  </dd>
+                  <dt class="software__list-term">02. Easy To Customize</dt>
+                  <dd class="software__list-definition">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum.
+                  </dd>
+                  <dt class="software__list-term">03. Responsive Design</dt>
+                  <dd class="software__list-definition">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum.
+                  </dd>
+                  <dt class="software__list-term">04. 24/7 Support</dt>
+                  <dd class="software__list-definition">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fun-facts section">
+          <div class="container">
+            <div class="fun-facts__columns">
+              <div class="fun-facts__desc">
+                <h2 class="fun-facts__title">
+                  <span class="fun-facts__subtitle">Fun Facts</span> Some Fun
+                  Facts About Dashboard
+                </h2>
+              </div>
+              <div class="fun-facts__value">
+                <ul
+                  class="fun-facts__list animate__animated animate__fadeInUp wow"
+                >
+                  <li class="fun-facts__item">
+                    <span class="fun-facts__number">53K</span>
+                    <p class="fun-facts__property">layouts</p>
+                  </li>
+                  <li class="fun-facts__item">
+                    <span class="fun-facts__number">10K</span>
+                    <p class="fun-facts__property">projects</p>
+                  </li>
+                  <li class="fun-facts__item">
+                    <span class="fun-facts__number">12K</span>
+                    <p class="fun-facts__property">cup coffee</p>
+                  </li>
+                  <li class="fun-facts__item">
+                    <span class="fun-facts__number">120</span>
+                    <p class="fun-facts__property">awards</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="circle"></div>
+          <div class="rhombues"></div>
+        </section>
+        <section id="video" class="presentation section">
+          <div class="container">
+            <div class="presentation__columns">
+              <div class="presentation__desc">
+                <h2 class="presentation__title">
+                  Meet With <br />
+                  Future Landingpage
+                </h2>
+                <p class="presentation__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+                <p class="presentation__available">available now</p>
+                <ul class="presentation__list">
+                  <li class="presentation__item">
+                    <a href="#" class="presentation__app" target="_blank">
+                      <img
+                        src="./img/google-play.png"
+                        alt=""
+                        class="presentation__app-icon"
+                      />
+                    </a>
+                  </li>
+                  <li class="presentation__item">
+                    <a href="#" class="presentation__app" target="_blank">
+                      <img
+                        src="./img/app-store.png"
+                        alt=""
+                        class="presentation__app-icon"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="presentation__video animate__animated animate__fadeInRight wow"
+              >
+                <img
+                  src="./img/video.png"
+                  alt=""
+                  class="presentation__video-play"
+                />
+                <a
+                  class="video-button"
+                  data-fancybox
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                >
+                  <i class="fas fa-1.5x fa-play"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="presentation__video animate__animated animate__fadeInRight wow">
           <img src="./img/video.png" alt="" class="presentation__video-play">
           <a class="video-button" data-fancybox href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
             <i class="fas fa-1.5x fa-play"></i></a>
 
         </div> -->
-
-
-      </section>
-      <section class="advantages section">
-        <div class="container">
-          <div class="advantages__columns">
-            <div class="advantages__screenshot animate__animated animate__fadeInLeft wow">
-              <img src="./img/Слой2.png" alt="" class="advantages__img">
-            </div>
-            <div class="advantages__desc">
-              <div class="gear__icon">
-                <!-- <img src="./img/icon-gear.png" alt="Gear-icon" class="gap__image"> -->
+        </section>
+        <section class="advantages section">
+          <div class="container">
+            <div class="advantages__columns">
+              <div
+                class="advantages__screenshot animate__animated animate__fadeInLeft wow"
+              >
+                <img src="./img/Слой2.png" alt="" class="advantages__img" />
               </div>
-              <h2 class="advantages__title">Limpon Is Suitable For <br>
-                Anytype LandingPage</h2>
-              <p class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit
-                esse cillum.</p>
-              <div class="advantages__button">
-                <a href="#" class="btn-md">get started now</a>
+              <div class="advantages__desc">
+                <div class="gear__icon">
+                  <!-- <img src="./img/icon-gear.png" alt="Gear-icon" class="gap__image"> -->
+                </div>
+                <h2 class="advantages__title">
+                  Limpon Is Suitable For <br />
+                  Anytype LandingPage
+                </h2>
+                <p class="advantages__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+                <div class="advantages__button">
+                  <a href="#" class="btn-md">get started now</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="properties section">
-        <div class="container">
-          <div class="properties__columns">
-            <div class="properties__desc">
-              <div class="gear__icon">
-
+        </section>
+        <section class="properties section">
+          <div class="container">
+            <div class="properties__columns">
+              <div class="properties__desc">
+                <div class="gear__icon"></div>
+                <h2 class="properties__title">
+                  Easy To Edit & <br />
+                  Very Easily Control
+                </h2>
+                <p class="properties__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum.
+                </p>
+                <div class="properties__button">
+                  <a href="#" class="btn-md">learn more</a>
+                </div>
               </div>
-              <h2 class="properties__title">Easy To Edit & <br>
-                Very Easily Control</h2>
-              <p class="properties__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit
-                esse cillum.</p>
-              <div class="properties__button">
-                <a href="#" class="btn-md">learn more</a>
+              <div
+                class="properties__screenshot animate__animated animate__fadeInRight wow"
+              >
+                <img src="./img/Слой3.png" alt="" class="advantages__img" />
               </div>
-            </div>
-            <div class="properties__screenshot animate__animated animate__fadeInRight wow">
-              <img src="./img/Слой3.png" alt="" class="advantages__img">
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-      <section id="screens" class="screen-preview section">
-
-        <div class="container">
-          <div class="screen-preview__block">
-            <div class="screen-preview__desc">
-              <h2 class="screen-preview__title">
-                <span class="screen-preview__subtitle">screen preview</span>Screenshot With Details
-              </h2>
-            </div>
-            <div class="screen-preview__pic animate__animated animate__fadeInUp wow">
-              <img src="./img/Слой 5.png" alt="" class="screen-preview__screenshot">
             </div>
           </div>
-        </div>
-
-      </section>
-      <section class="testimonials">
-        <div class="container">
-          <div class="testimonials__block">
-            <div class="testimonials__desc">
-              <h2 class="testimonials__title">
-                <span class="testimonials__subtitle">testimonials</span> Our Happy Clients
-              </h2>
+        </section>
+        <section id="screens" class="screen-preview section">
+          <div class="container">
+            <div class="screen-preview__block">
+              <div class="screen-preview__desc">
+                <h2 class="screen-preview__title">
+                  <span class="screen-preview__subtitle">screen preview</span
+                  >Screenshot With Details
+                </h2>
+              </div>
+              <div
+                class="screen-preview__pic animate__animated animate__fadeInUp wow"
+              >
+                <img
+                  src="./img/Слой 5.png"
+                  alt=""
+                  class="screen-preview__screenshot"
+                />
+              </div>
             </div>
-            <div class="swiper-container">
-              <ul class="testimonials__list swiper-wrapper animate__animated animate__fadeInUp wow">
-                <li class="testimonials__item swiper-slide">
-                  <p class="testimonials__info">It is a long established fact that a read
-                    her will be distracted by the readable
-                    content of a page when looking.</p>
-                  <div class="testimonials__user">
-                    <div class="testimonials__user-pic">
-                      <img src="./img/woman.png" alt="" class="testimonials__user-woman">
-                    </div>
-                    <div class="testimonials__user-desc">
-                      <div class="testimonials__user-name">
-                        Rolin B. Mirano
+          </div>
+        </section>
+        <section class="testimonials">
+          <div class="container">
+            <div class="testimonials__block">
+              <div class="testimonials__desc">
+                <h2 class="testimonials__title">
+                  <span class="testimonials__subtitle">testimonials</span> Our
+                  Happy Clients
+                </h2>
+              </div>
+              <div class="swiper-container">
+                <ul
+                  class="testimonials__list swiper-wrapper animate__animated animate__fadeInUp wow"
+                >
+                  <li class="testimonials__item swiper-slide">
+                    <p class="testimonials__info">
+                      It is a long established fact that a read her will be
+                      distracted by the readable content of a page when looking.
+                    </p>
+                    <div class="testimonials__user">
+                      <div class="testimonials__user-pic">
+                        <img
+                          src="./img/woman.png"
+                          alt=""
+                          class="testimonials__user-woman"
+                        />
                       </div>
-                      <div class="testimonials__user-occup">
-                        ceo, uihub
+                      <div class="testimonials__user-desc">
+                        <div class="testimonials__user-name">
+                          Rolin B. Mirano
+                        </div>
+                        <div class="testimonials__user-occup">ceo, uihub</div>
                       </div>
                     </div>
-                  </div>
+                  </li>
+                  <li class="testimonials__item swiper-slide">
+                    <p class="testimonials__info">
+                      It is a long established fact that a read her will be
+                      distracted by the readable content of a page when looking.
+                    </p>
+                    <div class="testimonials__user">
+                      <div class="testimonials__user-pic">
+                        <img
+                          src="./img/woman.png"
+                          alt=""
+                          class="testimonials__user-woman"
+                        />
+                      </div>
+                      <div class="testimonials__user-desc">
+                        <div class="testimonials__user-name">
+                          Rolin B. Mirano
+                        </div>
+                        <div class="testimonials__user-occup">ceo, uihub</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="testimonials__item swiper-slide">
+                    <p class="testimonials__info">
+                      It is a long established fact that a read her will be
+                      distracted by the readable content of a page when looking.
+                    </p>
+                    <div class="testimonials__user">
+                      <div class="testimonials__user-pic">
+                        <img
+                          src="./img/woman.png"
+                          alt=""
+                          class="testimonials__user-woman"
+                        />
+                      </div>
+                      <div class="testimonials__user-desc">
+                        <div class="testimonials__user-name">
+                          Rolin B. Mirano
+                        </div>
+                        <div class="testimonials__user-occup">ceo, uihub</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="pricing" class="pricing-plans">
+          <div class="container">
+            <div class="pricing-plans__block">
+              <div class="pricing-plans__desc">
+                <h2 class="pricing-plans__title">
+                  <span class="pricing-plans__subtitle">our plans</span>Pricing
+                  Plans
+                </h2>
+              </div>
+              <ul
+                class="pricing-plans__list animate__animated animate__fadeInUp wow"
+              >
+                <li class="pricing-plans__item">
+                  <svg
+                    preserveAspectRatio="none"
+                    version="1.1"
+                    viewBox="0 0 100 100"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 100 L100 0 L200 100"
+                      stroke-width="0"
+                      stroke=""
+                    ></path>
+                  </svg>
+                  <h3 class="pricing-plans__item-title">Free</h3>
+                  <p class="pricing-plans__item-subtitle">
+                    <strong>starter</strong>
+                  </p>
+
+                  <ul class="pricing-plans__item-list">
+                    <li class="pricing-plans__item-properties">
+                      Unlimited users Active
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      1 GB Bandwidth Speed
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      256 MB Memory Card
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      Free Domain Name
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      Free Hosting Name
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      24x7 Online Support
+                    </li>
+                  </ul>
+                  <a href="#" class="btn-info">choose plan</a>
                 </li>
-                <li class="testimonials__item swiper-slide">
-                  <p class="testimonials__info">It is a long established fact that a read
-                    her will be distracted by the readable
-                    content of a page when looking.</p>
-                  <div class="testimonials__user">
-                    <div class="testimonials__user-pic">
-                      <img src="./img/woman.png" alt="" class="testimonials__user-woman">
-                    </div>
-                    <div class="testimonials__user-desc">
-                      <div class="testimonials__user-name">
-                        Rolin B. Mirano
-                      </div>
-                      <div class="testimonials__user-occup">
-                        ceo, uihub
-                      </div>
-                    </div>
-                  </div>
+                <li class="pricing-plans__item active">
+                  <h3 class="pricing-plans__item-title">
+                    <span>$</span>90<span>/mo</span>
+                  </h3>
+                  <p class="pricing-plans__item-subtitle active">
+                    <strong>starter</strong>
+                  </p>
+                  <ul class="pricing-plans__item-list">
+                    <li class="pricing-plans__item-properties">
+                      Unlimited users Active
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      1 GB Bandwidth Speed
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      256 MB Memory Card
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      Free Domain Name
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      Free Hosting Name
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      24x7 Online Support
+                    </li>
+                  </ul>
+                  <a href="#" class="btn-info active">choose plan</a>
                 </li>
-                <li class="testimonials__item swiper-slide">
-                <p class="testimonials__info">It is a long established fact that a read
-                    her will be distracted by the readable
-                    content of a page when looking.</p>
-                  <div class="testimonials__user">
-                    <div class="testimonials__user-pic">
-                      <img src="./img/woman.png" alt="" class="testimonials__user-woman">
-                    </div>
-                    <div class="testimonials__user-desc">
-                      <div class="testimonials__user-name">
-                        Rolin B. Mirano
-                      </div>
-                      <div class="testimonials__user-occup">
-                        ceo, uihub
-                      </div>
-                    </div>
-                  </div>
+                <li class="pricing-plans__item">
+                  <svg
+                    preserveAspectRatio="none"
+                    version="1.1"
+                    viewBox="0 0 100 100"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 100 L100 0 L200 100"
+                      stroke-width="0"
+                      stroke=""
+                    ></path>
+                  </svg>
+                  <h3 class="pricing-plans__item-title">
+                    <span>$</span>350<span>/mo</span>
+                  </h3>
+                  <p class="pricing-plans__item-subtitle">
+                    <strong>starter</strong>
+                  </p>
+                  <ul class="pricing-plans__item-list">
+                    <li class="pricing-plans__item-properties">
+                      Unlimited users Active
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      1 GB Bandwidth Speed
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      256 MB Memory Card
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      Free Domain Name
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      Free Hosting Name
+                    </li>
+                    <li class="pricing-plans__item-properties">
+                      24x7 Online Support
+                    </li>
+                  </ul>
+                  <a href="#" class="btn-info">choose plan</a>
                 </li>
               </ul>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="pricing" class="pricing-plans">
-        <div class="container">
-          <div class="pricing-plans__block">
-            <div class="pricing-plans__desc">
-              <h2 class="pricing-plans__title">
-                <span class="pricing-plans__subtitle">our plans</span>Pricing Plans
-              </h2>
-            </div>
-            <ul class="pricing-plans__list animate__animated animate__fadeInUp wow">
-              <li class="pricing-plans__item">
-                <svg preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 100 L100 0 L200 100" stroke-width="0" stroke=""></path>
-                </svg>
-                <h3 class="pricing-plans__item-title">
-                  Free</h3>
-                <p class="pricing-plans__item-subtitle"><strong>starter</strong></p>
-
-                <ul class="pricing-plans__item-list">
-                  <li class="pricing-plans__item-properties">Unlimited users Active
-                  </li>
-                  <li class="pricing-plans__item-properties">1 GB Bandwidth Speed</li>
-                  <li class="pricing-plans__item-properties">256 MB Memory Card</li>
-                  <li class="pricing-plans__item-properties">Free Domain Name</li>
-                  <li class="pricing-plans__item-properties">Free Hosting Name</li>
-                  <li class="pricing-plans__item-properties">24x7 Online Support</li>
-                </ul>
-                <a href="#" class="btn-info">choose plan</a>
-              </li>
-              <li class="pricing-plans__item active">
-                <h3 class="pricing-plans__item-title">
-                  <span>$</span>90<span>/mo</span></h3>
-                <p class="pricing-plans__item-subtitle active"><strong>starter</strong></p>
-                <ul class="pricing-plans__item-list">
-                  <li class="pricing-plans__item-properties">Unlimited users Active
-                  </li>
-                  <li class="pricing-plans__item-properties">1 GB Bandwidth Speed</li>
-                  <li class="pricing-plans__item-properties">256 MB Memory Card</li>
-                  <li class="pricing-plans__item-properties">Free Domain Name</li>
-                  <li class="pricing-plans__item-properties">Free Hosting Name</li>
-                  <li class="pricing-plans__item-properties">24x7 Online Support</li>
-                </ul>
-                <a href="#" class="btn-info active">choose plan</a>
-              </li>
-              <li class="pricing-plans__item">
-                <svg preserveAspectRatio="none" version="1.1" viewBox="0 0 100 100" width="100%"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 100 L100 0 L200 100" stroke-width="0" stroke=""></path>
-                </svg>
-                <h3 class="pricing-plans__item-title">
-                  <span>$</span>350<span>/mo</span></h3>
-                <p class="pricing-plans__item-subtitle"><strong>starter</strong></p>
-                <ul class="pricing-plans__item-list">
-                  <li class="pricing-plans__item-properties">Unlimited users Active
-                  </li>
-                  <li class="pricing-plans__item-properties">1 GB Bandwidth Speed</li>
-                  <li class="pricing-plans__item-properties">256 MB Memory Card</li>
-                  <li class="pricing-plans__item-properties">Free Domain Name</li>
-                  <li class="pricing-plans__item-properties">Free Hosting Name</li>
-                  <li class="pricing-plans__item-properties">24x7 Online Support</li>
-                </ul>
-                <a href="#" class="btn-info">choose plan</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="team" class="team">
-        <div class="container">
-          <div class="team__block">
-            <div class="team__desc">
-              <h2 class="team__title">
-                <span class="team__subtitle">angels</span> Our Team
-              </h2>
-            </div>            
+        </section>
+        <section id="team" class="team">
+          <div class="container">
+            <div class="team__block">
+              <div class="team__desc">
+                <h2 class="team__title">
+                  <span class="team__subtitle">angels</span> Our Team
+                </h2>
+              </div>
               <ul class="team__list animate__animated animate__fadeInUp wow">
                 <li class="team__item">
                   <div class="team__user-pic">
-                    <img src="./img/team1.jpg" alt="" class="team__user-img">
+                    <img src="./img/team1.jpg" alt="" class="team__user-img" />
                   </div>
                   <div class="team__user-info">
-                    <div class="team__user-occ">
-                      founder
-                    </div>
-                    <div class="team__user-name">
-                      Ricardo T. Obrien
-                    </div>
+                    <div class="team__user-occ">founder</div>
+                    <div class="team__user-name">Ricardo T. Obrien</div>
                   </div>
                   <button class="team__user-button team__user-button-ricardo">
                     +
                   </button>
-                  <ul class="team__socials team__socials-ricardo" style="display: none;">
+                  <ul
+                    class="team__socials team__socials-ricardo"
+                    style="display: none"
+                  >
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-fb team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-fb team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-tw team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-tw team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-be team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-be team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-inst team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-inst team__user-button"
+                      >
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li class="team__item">
                   <div class="team__user-pic">
-                    <img src="./img/team2.png" alt="" class="team__user-img">
+                    <img src="./img/team2.png" alt="" class="team__user-img" />
                   </div>
                   <div class="team__user-info">
-                    <div class="team__user-occ">
-                      ceo
-                    </div>
-                    <div class="team__user-name">
-                      Alberto Del Rio
-                    </div>
+                    <div class="team__user-occ">ceo</div>
+                    <div class="team__user-name">Alberto Del Rio</div>
                   </div>
                   <button class="team__user-button team__user-button-alberto">
                     +
                   </button>
-                  <ul class="team__socials team__socials-alberto " style="display: none;">
+                  <ul
+                    class="team__socials team__socials-alberto"
+                    style="display: none"
+                  >
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-fb team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-fb team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-tw team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-tw team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-be team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-be team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-inst team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-inst team__user-button"
+                      >
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li class="team__item">
                   <div class="team__user-pic">
-                    <img src="./img/team3.png" alt="" class="team__user-img">
+                    <img src="./img/team3.png" alt="" class="team__user-img" />
                   </div>
                   <div class="team__user-info">
-                    <div class="team__user-occ">
-                      designer
-                    </div>
-                    <div class="team__user-name">
-                      Thomas Alva Adison
-                    </div>
+                    <div class="team__user-occ">designer</div>
+                    <div class="team__user-name">Thomas Alva Adison</div>
                   </div>
                   <button class="team__user-button team__user-button-thomas">
                     +
                   </button>
-                  <ul class="team__socials team__socials-thomas" style="display: none;">
+                  <ul
+                    class="team__socials team__socials-thomas"
+                    style="display: none"
+                  >
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-fb team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-fb team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-tw team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-tw team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-be team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-be team__user-button"
+                      >
+                      </a>
+                    </li>
                     <li class="team__socials-item">
-                      <a href="#" class="team__socials-icon team__socials-inst team__user-button">
-
-                      </a></li>
+                      <a
+                        href="#"
+                        class="team__socials-icon team__socials-inst team__user-button"
+                      >
+                      </a>
+                    </li>
                   </ul>
-
                 </li>
-              </ul>            
-            
-          </div>
-        </div>
-      </section>
-      <section id="free-trial" class="trial">
-        <div class="container">
-          <div class="trial__columns">
-            <div class="trial__left animate__animated animate__fadeInLeft wow">
-              <img src="./img/Слой8.png" alt="" class="trial-pic">
-            </div>
-            <div class="trial__right">
-              <h2 class="trial__title">Start Your Free Trial <br>
-                No Need Credit Card.</h2>
-              <form action="" class="form">
-                <div class="form__row">
-                  <input type="text" id="name" placeholder="Enter your name here">
-                  <!-- <label for="name">Enter your name here</label> -->
-                </div>
-                <div class="form__row">
-                  <input type="email" id="email" placeholder="Enter your email here">
-                  <!-- <label for="email">Enter your email here</label> -->
-                </div>
-                <div class="form__row">
-                  <textarea id="textarea" placeholder="Enter your message here"></textarea>
-                  <!-- <label for="textarea">Enter your message here</label> -->
-                </div>
-                <button type="submit" class="btn-md"><span></span>submit now</button>
-
-              </form>
-
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
-
-    </div>
-    <footer class="footer">
-
-      <div class="container">
-        <div class="footer__block">
-          <div class="footer__left">
-            Made With Love & Copyright By - <a href="#">limpon</a>
+        </section>
+        <section id="free-trial" class="trial">
+          <div class="container">
+            <div class="trial__columns">
+              <div
+                class="trial__left animate__animated animate__fadeInLeft wow"
+              >
+                <img src="./img/Слой8.png" alt="" class="trial-pic" />
+              </div>
+              <div class="trial__right">
+                <h2 class="trial__title">
+                  Start Your Free Trial <br />
+                  No Need Credit Card.
+                </h2>
+                <form action="" class="form">
+                  <div class="form__row">
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Enter your name here"
+                    />
+                    <!-- <label for="name">Enter your name here</label> -->
+                  </div>
+                  <div class="form__row">
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Enter your email here"
+                    />
+                    <!-- <label for="email">Enter your email here</label> -->
+                  </div>
+                  <div class="form__row">
+                    <textarea
+                      id="textarea"
+                      placeholder="Enter your message here"
+                    ></textarea>
+                    <!-- <label for="textarea">Enter your message here</label> -->
+                  </div>
+                  <button type="submit" class="btn-md">
+                    <span></span>submit now
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="footer__right">
-            <ul class="footer__socials">
-              <li class="footer__socials-item">
-                <a href="#" class="footer__social-icon footer__social-fb">
-                  <svg class="social__icon">
-                    <use xlink:href="./img/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__socials-item">
-                <a href="#" class="footer__social-icon footer__social-tw">
-                  <svg class="social__icon">
-                    <use xlink:href="./img/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__socials-item">
-                <a href="#" class="footer__social-icon footer__social-be">
-                  <svg class="social__icon">
-                    <use xlink:href="./img/sprite.svg#insta"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__socials-item">
-                <a href="#" class="footer__social-icon footer__social-inst">
-                  <svg class="social__icon">
-                    <use xlink:href="./img/sprite.svg#behance"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__socials-item">
-                <a href="#" class="footer__social-icon footer__social-inst">
-                  <svg class="social__icon">
-                    <use xlink:href="./img/sprite.svg#pinterest"></use>
-                  </svg>
-                </a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
+        </section>
       </div>
-    </footer>
-  </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__block">
+            <div class="footer__left">
+              Made With Love & Copyright By - <a href="#">limpon</a>
+            </div>
+            <div class="footer__right">
+              <ul class="footer__socials">
+                <li class="footer__socials-item">
+                  <a href="#" class="footer__social-icon footer__social-fb">
+                    <svg class="social__icon">
+                      <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="#" class="footer__social-icon footer__social-tw">
+                    <svg class="social__icon">
+                      <use xlink:href="./img/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="#" class="footer__social-icon footer__social-be">
+                    <svg class="social__icon">
+                      <use xlink:href="./img/sprite.svg#insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="#" class="footer__social-icon footer__social-inst">
+                    <svg class="social__icon">
+                      <use xlink:href="./img/sprite.svg#behance"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="#" class="footer__social-icon footer__social-inst">
+                    <svg class="social__icon">
+                      <use xlink:href="./img/sprite.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
-  <script src="./scripts/main.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>

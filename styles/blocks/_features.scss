@@ -1,7 +1,6 @@
 .features {
   padding-top: rem(86px);
   padding-bottom: 8.5rem;
-  
 
   &__block {
     display: grid;
@@ -61,28 +60,23 @@
     &:hover {
       transform: translateY(-9px);
     }
-    
-    
   }
   &__card {
-    &-logo{
-      transition: all .3s linear;
-      &:hover{       
-        transform: scale(1.1,1.1);
+    &-logo {
+      transition: all 0.3s linear;
+      &:hover {
+        transform: scale(1.1, 1.1);
 
-        @include tabletsPro{
-        transform: none;
+        @include tabletsPro {
+          transform: none;
         }
-        
       }
-     
-
     }
     &-icon {
       margin: 0 auto 1.25rem;
     }
 
-       &-title {
+    &-title {
       margin-bottom: rem(18px);
       font-size: rem(20px);
       color: $dark-title;
